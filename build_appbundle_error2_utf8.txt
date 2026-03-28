@@ -1,0 +1,23 @@
+﻿Running Gradle task 'bundleRelease'...                              3.3s
+flutter : Release app bundle failed 
+to strip debug symbols from native 
+libraries.
+At line:1 char:1
++ flutter build appbundle --release 
+--obfuscate --split-debug-info=buil 
+...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpec 
+   ified: (Release app bun...tive li  
+  braries.:String) [], RemoteExcept   
+ ion
+    + FullyQualifiedErrorId : NativeC 
+   ommandError
+ 
+Please run flutter doctor and ensure 
+that the Android toolchain does not
+report any issues.
+
+Otherwise, file an issue at https://gi
+thub.com/flutter/flutter/issues.

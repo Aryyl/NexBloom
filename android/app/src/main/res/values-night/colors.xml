@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Widget Colors (Night) — keep same as light so widget always looks clean white -->
+    <color name="widget_primary">#0E4DEC</color>
+    <color name="widget_bg">#FFFFFF</color>
+    <color name="widget_card_bg">#FFFFFF</color>
+    <color name="widget_inner_card_bg">#F7F8FA</color>
+    <color name="widget_inner_card_border">#E8EBF0</color>
+    <color name="widget_text_main">#1E293B</color>
+    <color name="widget_text_sub">#64748B</color>
+    <color name="widget_text_muted">#94A3B8</color>
+    <color name="widget_priority_high">#EF4444</color>
+    <color name="widget_schedule_bar_inactive">#CBD5E1</color>
+    <color name="widget_schedule_bar_active">#0E4DEC</color>
+    <color name="widget_progress_track">#E2E8F0</color>
+    <color name="widget_accent_bar_bg">#E8EDF5</color>
+    <color name="widget_time_inactive">#475569</color>
+</resources>

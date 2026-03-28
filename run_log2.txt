@@ -1,0 +1,596 @@
+﻿Launching lib\main.dart on motorola edge 50 fusion in debug mode...
+Running Gradle task 'assembleDebug'...                             12.2s
+ΓêÜ Built build\app\outputs\flutter-apk\app-debug.apk
+Installing build\app\outputs\flutter-apk\app-debug.apk...           6.2s
+D/FlutterJNI(21213): Beginning load of flutter...
+D/FlutterJNI(21213): flutter (null) was loaded normally!
+I/flutter (21213): [IMPORTANT:flutter/shell/platform/android/android_context_vk_impeller.cc(62)] Using the Impeller rendering backend (Vulkan).
+Syncing files to device motorola edge 50 fusion...                 119ms
+
+Flutter run key commands.
+r Hot reload. 
+R Hot restart.
+h List all available interactive commands.
+d Detach (terminate "flutter run" but leave application running).
+c Clear the screen
+q Quit (terminate the application on the device).
+
+A Dart VM Service on motorola edge 50 fusion is available at: http://127.0.0.1:55172/RWsF9luQZV0=/
+The Flutter DevTools debugger and profiler on motorola edge 50 fusion is available at: http://127.0.0.1:9101?uri=http://127.0.0.1:55172/RWsF9luQZV0=/
+I/Choreographer(21213): Skipped 110 frames!  The application may be doing too much work on its main thread.
+D/ProfileInstaller(21213): Installing profile for com.example.studentcompanionapp
+W/entcompanionapp(21213): userfaultfd: MOVE ioctl seems unsupported: Connection timed out
+W/entcompanionapp(21213): Unable to open libdolphin.so: dlopen failed: library "libdolphin.so" not found.
+W/WindowOnBackDispatcher(21213): OnBackInvokedCallback is not enabled for the application.
+W/WindowOnBackDispatcher(21213): Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+W/WindowOnBackDispatcher(21213): OnBackInvokedCallback is not enabled for the application.
+W/WindowOnBackDispatcher(21213): Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+
+ΓòÉΓòÉΓòí EXCEPTION CAUGHT BY FOUNDATION LIBRARY Γò₧ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+The following UnmountedRefException was thrown while dispatching notifications for
+ValueNotifier<AppSettings>:
+Cannot use the Ref of Provider<AppSettings>#c1bcb after it has been disposed. This typically happens
+if:
+- A provider rebuilt, but the previous "build" was still pending and is still performing operations.
+  You should therefore either use `ref.onDispose` to cancel pending work, or
+  check `ref.mounted` after async gaps or anything that could invalidate the provider.
+- You tried to use Ref inside `onDispose` or other life-cycles.
+  This is not supported, as the provider is already being disposed.
+
+When the exception was thrown, this was the stack:
+#0      Ref._throwIfInvalidUsage (package:riverpod/src/core/ref.dart:236:7)
+#1      Ref.invalidateSelf (package:riverpod/src/core/ref.dart:333:5)
+#2      settingsProvider.<anonymous closure>.<anonymous closure> (package:studentcompanionapp/domain/providers/theme_provider.dart:170:9)
+#3      ChangeNotifier.notifyListeners (package:flutter/src/foundation/change_notifier.dart:435:24)
+#4      ValueNotifier.value= (package:flutter/src/foundation/change_notifier.dart:559:5)
+#5      SettingsController.updateSettings (package:studentcompanionapp/domain/providers/theme_provider.dart:105:23)
+#6      SettingsController.updatePrimaryColor (package:studentcompanionapp/domain/providers/theme_provider.dart:157:13)
+#7      _SettingsScreenState._showColorPickerDialog.<anonymous closure>.<anonymous closure>.<anonymous closure> (package:studentcompanionapp/presentation/screens/settings/settings_screen.dart:346:40)
+#8      GestureRecognizer.invokeCallback (package:flutter/src/gestures/recognizer.dart:345:24)
+#9      TapGestureRecognizer.handleTapUp (package:flutter/src/gestures/tap.dart:758:11)
+#10     BaseTapGestureRecognizer._checkUp (package:flutter/src/gestures/tap.dart:383:5)
+#11     BaseTapGestureRecognizer.handlePrimaryPointer (package:flutter/src/gestures/tap.dart:314:7)
+#12     PrimaryPointerGestureRecognizer.handleEvent (package:flutter/src/gestures/recognizer.dart:721:9)
+#13     PointerRouter._dispatch (package:flutter/src/gestures/pointer_router.dart:97:12)
+#14     PointerRouter._dispatchEventToRoutes.<anonymous closure> (package:flutter/src/gestures/pointer_router.dart:142:9)
+#15     _LinkedHashMapMixin.forEach (dart:_compact_hash:764:13)
+#16     PointerRouter._dispatchEventToRoutes (package:flutter/src/gestures/pointer_router.dart:140:18)
+#17     PointerRouter.route (package:flutter/src/gestures/pointer_router.dart:130:7)
+#18     GestureBinding.handleEvent (package:flutter/src/gestures/binding.dart:528:19)
+#19     GestureBinding.dispatchEvent (package:flutter/src/gestures/binding.dart:498:22)
+#20     RendererBinding.dispatchEvent (package:flutter/src/rendering/binding.dart:473:11)
+#21     GestureBinding._handlePointerEventImmediately (package:flutter/src/gestures/binding.dart:437:7)
+#22     GestureBinding.handlePointerEvent (package:flutter/src/gestures/binding.dart:394:5)
+#23     GestureBinding._flushPointerEventQueue (package:flutter/src/gestures/binding.dart:341:7)
+#24     GestureBinding._handlePointerDataPacket (package:flutter/src/gestures/binding.dart:308:9)
+#25     _invoke1 (dart:ui/hooks.dart:346:13)
+#26     PlatformDispatcher._dispatchPointerDataPacket (dart:ui/platform_dispatcher.dart:467:7)
+#27     _dispatchPointerDataPacket (dart:ui/hooks.dart:281:31)
+
+The ValueNotifier<AppSettings> sending notification was:
+  ValueNotifier<AppSettings>#2523f(Instance of 'AppSettings')
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+
+I/ImeTracker(21213): com.example.studentcompanionapp:cb714856: onRequestShow at ORIGIN_CLIENT reason SHOW_SOFT_INPUT fromUser false
+D/InputMethodManager(21213): showSoftInput() view=io.flutter.embedding.android.FlutterView{a8ca181 VFE...... .F....ID 0,0-1080,2400 #1 aid=1073741824} flags=0 reason=SHOW_SOFT_INPUT
+I/ImeTracker(21213): com.example.studentcompanionapp:daa7700: onRequestShow at ORIGIN_CLIENT reason SHOW_SOFT_INPUT fromUser false
+D/InputMethodManager(21213): showSoftInput() view=io.flutter.embedding.android.FlutterView{a8ca181 VFE...... .F....ID 0,0-1080,2400 #1 aid=1073741824} flags=0 reason=SHOW_SOFT_INPUT
+I/AssistStructure(21213): Flattened final assist data: 520 bytes, containing 1 windows, 3 views
+D/InputConnectionAdaptor(21213): The input method toggled cursor monitoring on
+D/InsetsController(21213): show(ime(), fromIme=true)
+D/InsetsController(21213): show(ime(), fromIme=true)
+I/ImeTracker(21213): com.example.studentcompanionapp:daa7700: onCancelled at PHASE_CLIENT_APPLY_ANIMATION
+W/InteractionJankMonitor(21213): Initializing without READ_DEVICE_CONFIG permission. enabled=false, interval=1, missedFrameThreshold=3, frameTimeThreshold=64, package=com.example.studentcompanionapp
+I/ImeTracker(21213): com.example.studentcompanionapp:cb714856: onShown
+Another exception was thrown: Cannot use the Ref of Provider<AppSettings>#c1bcb after it has been disposed. This typically happens if:
+Another exception was thrown: Cannot use the Ref of Provider<AppSettings>#c1bcb after it has been disposed. This typically happens if:
+I/ImeTracker(21213): com.example.studentcompanionapp:1b3c4f83: onRequestHide at ORIGIN_CLIENT reason HIDE_SOFT_INPUT fromUser false
+D/InputConnectionAdaptor(21213): The input method toggled cursor monitoring off
+D/InsetsController(21213): hide(ime(), fromIme=true)
+I/ImeTracker(21213): com.example.studentcompanionapp:396b728f: onRequestHide at ORIGIN_CLIENT reason HIDE_SOFT_INPUT_ON_ANIMATION_STATE_CHANGED fromUser false
+I/ImeTracker(21213): com.example.studentcompanionapp:1b3c4f83: onHidden
+I/ImeTracker(21213): com.example.studentcompanionapp:4012258e: onRequestShow at ORIGIN_CLIENT reason SHOW_SOFT_INPUT fromUser false
+D/InputMethodManager(21213): showSoftInput() view=io.flutter.embedding.android.FlutterView{a8ca181 VFE...... .F...... 0,0-1080,2400 #1 aid=1073741824} flags=0 reason=SHOW_SOFT_INPUT
+I/ImeTracker(21213): com.example.studentcompanionapp:8aec67fd: onRequestShow at ORIGIN_CLIENT reason SHOW_SOFT_INPUT fromUser false
+D/InputMethodManager(21213): showSoftInput() view=io.flutter.embedding.android.FlutterView{a8ca181 VFE...... .F...... 0,0-1080,2400 #1 aid=1073741824} flags=0 reason=SHOW_SOFT_INPUT
+I/AssistStructure(21213): Flattened final assist data: 544 bytes, containing 1 windows, 3 views
+D/InputConnectionAdaptor(21213): The input method toggled cursor monitoring on
+D/InsetsController(21213): show(ime(), fromIme=true)
+D/InsetsController(21213): show(ime(), fromIme=true)
+I/ImeTracker(21213): com.example.studentcompanionapp:8aec67fd: onCancelled at PHASE_CLIENT_APPLY_ANIMATION
+I/ImeTracker(21213): com.example.studentcompanionapp:4012258e: onShown
+Another exception was thrown: Cannot use the Ref of Provider<AppSettings>#c1bcb after it has been disposed. This typically happens if:
+Another exception was thrown: Cannot use the Ref of Provider<AppSettings>#c1bcb after it has been disposed. This typically happens if:
+Another exception was thrown: Cannot use the Ref of Provider<AppSettings>#c1bcb after it has been disposed. This typically happens if:
+I/ImeTracker(21213): com.example.studentcompanionapp:7bb3a30f: onRequestHide at ORIGIN_CLIENT reason HIDE_SOFT_INPUT fromUser false
+D/InputConnectionAdaptor(21213): The input method toggled cursor monitoring off
+D/InsetsController(21213): hide(ime(), fromIme=true)
+I/ImeTracker(21213): com.example.studentcompanionapp:f19d811f: onRequestHide at ORIGIN_CLIENT reason HIDE_SOFT_INPUT_ON_ANIMATION_STATE_CHANGED fromUser false
+I/ImeTracker(21213): com.example.studentcompanionapp:7bb3a30f: onHidden
+W/WindowOnBackDispatcher(21213): OnBackInvokedCallback is not enabled for the application.
+W/WindowOnBackDispatcher(21213): Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+W/WindowOnBackDispatcher(21213): OnBackInvokedCallback is not enabled for the application.
+W/WindowOnBackDispatcher(21213): Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+W/WindowOnBackDispatcher(21213): OnBackInvokedCallback is not enabled for the application.
+W/WindowOnBackDispatcher(21213): Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+W/WindowOnBackDispatcher(21213): OnBackInvokedCallback is not enabled for the application.
+W/WindowOnBackDispatcher(21213): Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+W/WindowOnBackDispatcher(21213): OnBackInvokedCallback is not enabled for the application.
+W/WindowOnBackDispatcher(21213): Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+W/WindowOnBackDispatcher(21213): OnBackInvokedCallback is not enabled for the application.
+W/WindowOnBackDispatcher(21213): Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+W/WindowOnBackDispatcher(21213): OnBackInvokedCallback is not enabled for the application.
+W/WindowOnBackDispatcher(21213): Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+W/WindowOnBackDispatcher(21213): OnBackInvokedCallback is not enabled for the application.
+W/WindowOnBackDispatcher(21213): Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+W/LongScreenshotUtils(21213): findMainScrollView topViewName_0; name: com.example.studentcompanionapp/com.example.studentcompanionapp.MainActivity/android.view.ViewRootImpl@1d4f461
+D/VRI[MainActivity](21213): visibilityChanged oldVisibility=true newVisibility=false
+D/Surface (21213): Surface::disconnect
+D/BufferQueueProducer(21213): [SurfaceView[com.example.studentcompanionapp/com.example.studentcompanionapp.MainActivity](BLAST)#241687(BLAST Consumer)pid:21213](id:52dd00000001,api:1,p:21213,c:21213) disconnect: api 1
+D/Surface (21213): Surface::disconnect
+D/BufferQueueProducer(21213): [SurfaceView[com.example.studentcompanionapp/com.example.studentcompanionapp.MainActivity](BLAST)#241687(BLAST Consumer)pid:21213](id:52dd00000001,api:0,p:-1,c:21213) disconnect: api -1
+D/Surface (21213): Surface::disconnect
+D/BufferQueueProducer(21213): [com.example.studentcompanionapp/com.example.studentcompanionapp.MainActivity#241682(BLAST Consumer)pid:21213](id:52dd00000000,api:1,p:21213,c:21213) disconnect: api 1
+D/WM-DelayedWorkTracker(21213): Scheduling work 2a36e7dc-cb56-4589-aa6e-1975ba08b352
+D/WM-GreedyScheduler(21213): Starting work for 2a36e7dc-cb56-4589-aa6e-1975ba08b352
+D/WM-Processor(21213): Processor: processing WorkGenerationalId(workSpecId=2a36e7dc-cb56-4589-aa6e-1975ba08b352, generation=37)
+D/WM-WorkerWrapper(21213): Starting work for dev.fluttercommunity.workmanager.BackgroundWorker
+W/FlutterJNI(21213): FlutterJNI.loadLibrary called more than once
+D/FlutterJNI(21213): Beginning load of flutter...
+D/FlutterJNI(21213): flutter (null) was loaded normally!
+W/FlutterJNI(21213): FlutterJNI.prefetchDefaultFontManager called more than once
+I/ResourceExtractor(21213): Found extracted resources res_timestamp-1-1772545250956
+W/FlutterJNI(21213): FlutterJNI.init called more than once
+I/AdrenoVK-0(21213): QUALCOMM build          : 0c393b63cf, I94e2bd5684
+I/AdrenoVK-0(21213): Build Date              : 05/02/25
+I/AdrenoVK-0(21213): Shader Compiler Version : EV031.36.08.33
+I/AdrenoVK-0(21213): Local Branch            : 
+I/AdrenoVK-0(21213): Remote Branch           : refs/tags/AU_LINUX_ANDROID_LA.VENDOR.1.0.R1.11.00.00.816.269
+I/AdrenoVK-0(21213): Remote Branch           : NONE
+I/AdrenoVK-0(21213): Reconstruct Branch      : NOTHING
+I/AdrenoVK-0(21213): Build Config            : S P 12.1.1 AArch64
+I/AdrenoVK-0(21213): Driver Path             : /vendor/lib64/hw/vulkan.adreno.so
+I/AdrenoVK-0(21213): Driver Version          : 0615.98
+I/AdrenoVK-0(21213): PFP                     : 0x01710181
+I/AdrenoVK-0(21213): ME                      : 0x00000000
+I/AdrenoVK-0(21213): Application Name    : Impeller
+I/AdrenoVK-0(21213): Application Version : 0x00800000
+I/AdrenoVK-0(21213): Engine Name         : Impeller
+I/AdrenoVK-0(21213): Engine Version      : 0x00400000
+I/AdrenoVK-0(21213): Api Version         : 0x00401000
+I/flutter (21213): [IMPORTANT:flutter/shell/platform/android/android_context_vk_impeller.cc(62)] Using the Impeller rendering backend (Vulkan).
+I/WM-WorkerWrapper(21213): Worker result SUCCESS for Work [ id=2a36e7dc-cb56-4589-aa6e-1975ba08b352, tags={ dev.fluttercommunity.workmanager.BackgroundWorker } ]
+D/WM-Processor(21213): Processor 2a36e7dc-cb56-4589-aa6e-1975ba08b352 executed; reschedule = false
+D/WM-GreedyScheduler(21213): Cancelling work ID 2a36e7dc-cb56-4589-aa6e-1975ba08b352
+D/WM-SystemJobScheduler(21213): Scheduling work ID 2a36e7dc-cb56-4589-aa6e-1975ba08b352Job ID 299
+I/HWUI    (21213): setGrContext validptr-->nullptr
+W/libc    (21213): Access denied finding property "vendor.gpp.create_frc_extension"
+I/AdrenoGLES-0(21213): QUALCOMM build                   : 0c393b63cf, I94e2bd5684
+I/AdrenoGLES-0(21213): Build Date                       : 05/02/25
+I/AdrenoGLES-0(21213): OpenGL ES Shader Compiler Version: EV031.36.08.33
+I/AdrenoGLES-0(21213): Local Branch                     : 
+I/AdrenoGLES-0(21213): Remote Branch                    : refs/tags/AU_LINUX_ANDROID_LA.VENDOR.1.0.R1.11.00.00.816.269
+I/AdrenoGLES-0(21213): Remote Branch                    : NONE
+I/AdrenoGLES-0(21213): Reconstruct Branch               : NOTHING
+I/AdrenoGLES-0(21213): Build Config                     : S P 12.1.1 AArch64
+I/AdrenoGLES-0(21213): Driver Path                      : /vendor/lib64/egl/libGLESv2_adreno.so
+I/AdrenoGLES-0(21213): Driver Version                   : 0615.98
+I/AdrenoGLES-0(21213): PFP: 0x01710181, ME: 0x00000000
+W/libc    (21213): Access denied finding property "vendor.gpp.create_frc_extension"
+E/qdgralloc(21213): GetSize: Unrecognized pixel format: 0x38
+E/Gralloc4(21213): isSupported(1, 1, 56, 1, ...) failed with 5
+E/GraphicBufferAllocator(21213): Failed to allocate (4 x 4) layerCount 1 format 56 usage b00: 5
+E/AHardwareBuffer(21213): GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -5), handle=0x0
+E/qdgralloc(21213): GetSize: Unrecognized pixel format: 0x3b
+E/Gralloc4(21213): isSupported(1, 1, 59, 1, ...) failed with 5
+E/GraphicBufferAllocator(21213): Failed to allocate (4 x 4) layerCount 1 format 59 usage b00: 5
+E/AHardwareBuffer(21213): GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -5), handle=0x0
+E/qdgralloc(21213): GetSize: Unrecognized pixel format: 0x38
+E/Gralloc4(21213): isSupported(1, 1, 56, 1, ...) failed with 5
+E/GraphicBufferAllocator(21213): Failed to allocate (4 x 4) layerCount 1 format 56 usage b00: 5
+E/AHardwareBuffer(21213): GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -5), handle=0x0
+E/qdgralloc(21213): GetSize: Unrecognized pixel format: 0x3b
+E/Gralloc4(21213): isSupported(1, 1, 59, 1, ...) failed with 5
+E/GraphicBufferAllocator(21213): Failed to allocate (4 x 4) layerCount 1 format 59 usage b00: 5
+E/AHardwareBuffer(21213): GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -5), handle=0x0
+W/qdgralloc(21213): getInterlacedFlag: getMetaData returned -22, defaulting to interlaced_flag = 0
+W/qdgralloc(21213): getInterlacedFlag: getMetaData returned -22, defaulting to interlaced_flag = 0
+W/qdgralloc(21213): getInterlacedFlag: getMetaData returned -22, defaulting to interlaced_flag = 0
+W/qdgralloc(21213): getInterlacedFlag: getMetaData returned -22, defaulting to interlaced_flag = 0
+W/qdgralloc(21213): getInterlacedFlag: getMetaData returned -22, defaulting to interlaced_flag = 0
+I/HWUI    (21213): setGrContext nullptr-->validptr
+W/WindowOnBackDispatcher(21213): OnBackInvokedCallback is not enabled for the application.
+W/WindowOnBackDispatcher(21213): Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+W/WindowOnBackDispatcher(21213): OnBackInvokedCallback is not enabled for the application.
+W/WindowOnBackDispatcher(21213): Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+W/WindowOnBackDispatcher(21213): OnBackInvokedCallback is not enabled for the application.
+W/WindowOnBackDispatcher(21213): Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+W/WindowOnBackDispatcher(21213): OnBackInvokedCallback is not enabled for the application.
+W/WindowOnBackDispatcher(21213): Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+W/WindowOnBackDispatcher(21213): OnBackInvokedCallback is not enabled for the application.
+W/WindowOnBackDispatcher(21213): Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+W/WindowOnBackDispatcher(21213): OnBackInvokedCallback is not enabled for the application.
+W/WindowOnBackDispatcher(21213): Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+Another exception was thrown: Cannot use the Ref of Provider<AppSettings>#c1bcb after it has been disposed. This typically happens if:
+Another exception was thrown: Cannot use the Ref of Provider<AppSettings>#c1bcb after it has been disposed. This typically happens if:
+Another exception was thrown: Cannot use the Ref of Provider<AppSettings>#c1bcb after it has been disposed. This typically happens if:
+Another exception was thrown: Cannot use the Ref of Provider<AppSettings>#c1bcb after it has been disposed. This typically happens if:
+W/WindowOnBackDispatcher(21213): OnBackInvokedCallback is not enabled for the application.
+W/WindowOnBackDispatcher(21213): Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+I/ImeTracker(21213): com.example.studentcompanionapp:79362608: onRequestShow at ORIGIN_CLIENT reason SHOW_SOFT_INPUT fromUser false
+D/InputMethodManager(21213): showSoftInput() view=io.flutter.embedding.android.FlutterView{a8ca181 VFE...... .F....ID 0,0-1080,2400 #1 aid=1073741824} flags=0 reason=SHOW_SOFT_INPUT
+I/ImeTracker(21213): com.example.studentcompanionapp:7d585a76: onRequestShow at ORIGIN_CLIENT reason SHOW_SOFT_INPUT fromUser false
+D/InputMethodManager(21213): showSoftInput() view=io.flutter.embedding.android.FlutterView{a8ca181 VFE...... .F....ID 0,0-1080,2400 #1 aid=1073741824} flags=0 reason=SHOW_SOFT_INPUT
+I/AssistStructure(21213): Flattened final assist data: 552 bytes, containing 1 windows, 3 views
+D/InputConnectionAdaptor(21213): The input method toggled cursor monitoring on
+D/InsetsController(21213): show(ime(), fromIme=true)
+D/InsetsController(21213): show(ime(), fromIme=true)
+I/ImeTracker(21213): com.example.studentcompanionapp:7d585a76: onCancelled at PHASE_CLIENT_APPLY_ANIMATION
+I/ImeTracker(21213): com.example.studentcompanionapp:79362608: onShown
+I/ImeTracker(21213): com.example.studentcompanionapp:191c4dab: onRequestHide at ORIGIN_CLIENT reason HIDE_SOFT_INPUT fromUser false
+D/InputConnectionAdaptor(21213): The input method toggled cursor monitoring off
+D/InsetsController(21213): hide(ime(), fromIme=true)
+I/ImeTracker(21213): com.example.studentcompanionapp:4749210: onRequestHide at ORIGIN_CLIENT reason HIDE_SOFT_INPUT_ON_ANIMATION_STATE_CHANGED fromUser false
+I/ImeTracker(21213): com.example.studentcompanionapp:191c4dab: onHidden
+I/ImeTracker(21213): com.example.studentcompanionapp:c18599a2: onRequestShow at ORIGIN_CLIENT reason SHOW_SOFT_INPUT fromUser false
+D/InputMethodManager(21213): showSoftInput() view=io.flutter.embedding.android.FlutterView{a8ca181 VFE...... .F...... 0,0-1080,2400 #1 aid=1073741824} flags=0 reason=SHOW_SOFT_INPUT
+I/ImeTracker(21213): com.example.studentcompanionapp:d41f5768: onRequestShow at ORIGIN_CLIENT reason SHOW_SOFT_INPUT fromUser false
+D/InputMethodManager(21213): showSoftInput() view=io.flutter.embedding.android.FlutterView{a8ca181 VFE...... .F...... 0,0-1080,2400 #1 aid=1073741824} flags=0 reason=SHOW_SOFT_INPUT
+I/AssistStructure(21213): Flattened final assist data: 528 bytes, containing 1 windows, 3 views
+D/InputConnectionAdaptor(21213): The input method toggled cursor monitoring on
+D/InsetsController(21213): show(ime(), fromIme=true)
+D/InsetsController(21213): show(ime(), fromIme=true)
+I/ImeTracker(21213): com.example.studentcompanionapp:d41f5768: onCancelled at PHASE_CLIENT_APPLY_ANIMATION
+I/ImeTracker(21213): com.example.studentcompanionapp:c18599a2: onShown
+D/InputConnectionAdaptor(21213): The input method toggled cursor monitoring off
+D/InsetsController(21213): hide(ime(), fromIme=true)
+I/ImeTracker(21213): com.example.studentcompanionapp:fbf94905: onRequestHide at ORIGIN_CLIENT reason HIDE_SOFT_INPUT_ON_ANIMATION_STATE_CHANGED fromUser false
+I/ImeTracker(21213): com.google.android.inputmethod.latin:149d07c8: onHidden
+I/ImeTracker(21213): com.example.studentcompanionapp:59693069: onRequestHide at ORIGIN_CLIENT reason HIDE_SOFT_INPUT fromUser false
+Another exception was thrown: Cannot use the Ref of Provider<AppSettings>#c1bcb after it has been disposed. This typically happens if:
+Another exception was thrown: Cannot use the Ref of Provider<AppSettings>#c1bcb after it has been disposed. This typically happens if:
+Another exception was thrown: Cannot use the Ref of Provider<AppSettings>#c1bcb after it has been disposed. This typically happens if:
+Another exception was thrown: Cannot use the Ref of Provider<AppSettings>#c1bcb after it has been disposed. This typically happens if:
+Another exception was thrown: Cannot use the Ref of Provider<AppSettings>#c1bcb after it has been disposed. This typically happens if:
+W/WindowOnBackDispatcher(21213): OnBackInvokedCallback is not enabled for the application.
+W/WindowOnBackDispatcher(21213): Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+W/WindowOnBackDispatcher(21213): OnBackInvokedCallback is not enabled for the application.
+W/WindowOnBackDispatcher(21213): Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+W/WindowOnBackDispatcher(21213): OnBackInvokedCallback is not enabled for the application.
+W/WindowOnBackDispatcher(21213): Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+W/WindowOnBackDispatcher(21213): OnBackInvokedCallback is not enabled for the application.
+W/WindowOnBackDispatcher(21213): Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+I/flutter (28871): [IMPORTANT:flutter/shell/platform/android/android_context_vk_impeller.cc(60)] Using the Impeller rendering backend (Vulkan).
+W/FlutterEngineCxnRegstry(28871): Attempted to register plugin (zh.e@be5e706) but it was already registered with this FlutterEngine (io.flutter.embedding.engine.FlutterEngine@1eb61c7).
+W/FlutterEngineCxnRegstry(28871): Attempted to register plugin (al.f@fed73f4) but it was already registered with this FlutterEngine (io.flutter.embedding.engine.FlutterEngine@1eb61c7).
+W/FlutterEngineCxnRegstry(28871): Attempted to register plugin (bl.a@426e71d) but it was already registered with this FlutterEngine (io.flutter.embedding.engine.FlutterEngine@1eb61c7).
+W/FlutterEngineCxnRegstry(28871): Attempted to register plugin (Nf.b@c696d92) but it was already registered with this FlutterEngine (io.flutter.embedding.engine.FlutterEngine@1eb61c7).
+W/FlutterEngineCxnRegstry(28871): Attempted to register plugin (fc.a@9325363) but it was already registered with this FlutterEngine (io.flutter.embedding.engine.FlutterEngine@1eb61c7).
+W/FlutterEngineCxnRegstry(28871): Attempted to register plugin (Qb.a@167db60) but it was already registered with this FlutterEngine (io.flutter.embedding.engine.FlutterEngine@1eb61c7).
+W/FlutterEngineCxnRegstry(28871): Attempted to register plugin (io.flutter.plugins.flutter_plugin_android_lifecycle.FlutterAndroidLifecyclePlugin@a4fd819) but it was already registered with this FlutterEngine (io.flutter.embedding.engine.FlutterEngine@1eb61c7).
+W/FlutterEngineCxnRegstry(28871): Attempted to register plugin (vl.a@42cd0de) but it was already registered with this FlutterEngine (io.flutter.embedding.engine.FlutterEngine@1eb61c7).
+W/FlutterEngineCxnRegstry(28871): Attempted to register plugin (D5.e@86cc2bf) but it was already registered with this FlutterEngine (io.flutter.embedding.engine.FlutterEngine@1eb61c7).
+W/FlutterEngineCxnRegstry(28871): Attempted to register plugin (com.baseflow.geolocator.a@85f4d8c) but it was already registered with this FlutterEngine (io.flutter.embedding.engine.FlutterEngine@1eb61c7).
+W/FlutterEngineCxnRegstry(28871): Attempted to register plugin (com.shiprocket.google_geocoder_plugin.GoogleGeocoderPlugin@7cdcd5) but it was already registered with this FlutterEngine (io.flutter.embedding.engine.FlutterEngine@1eb61c7).
+W/FlutterEngineCxnRegstry(28871): Attempted to register plugin (io.flutter.plugins.googlemaps.GoogleMapsPlugin@2311cea) but it was already registered with this FlutterEngine (io.flutter.embedding.engine.FlutterEngine@1eb61c7).
+W/FlutterEngineCxnRegstry(28871): Attempted to register plugin (io.flutter.plugins.imagepicker.ImagePickerPlugin@cb4cbdb) but it was already registered with this FlutterEngine (io.flutter.embedding.engine.FlutterEngine@1eb61c7).
+W/FlutterEngineCxnRegstry(28871): Attempted to register plugin (com.moengage.flutter.MoEngageFlutterPlugin@579b678) but it was already registered with this FlutterEngine (io.flutter.embedding.engine.FlutterEngine@1eb61c7).
+W/FlutterEngineCxnRegstry(28871): Attempted to register plugin (q6.a@33b7151) but it was already registered with this FlutterEngine (io.flutter.embedding.engine.FlutterEngine@1eb61c7).
+W/FlutterEngineCxnRegstry(28871): Attempted to register plugin (cl.d@27c1db6) but it was already registered with this FlutterEngine (io.flutter.embedding.engine.FlutterEngine@1eb61c7).
+W/FlutterEngineCxnRegstry(28871): Attempted to register plugin (io.flutter.plugins.pathprovider.PathProviderPlugin@aa4ab7) but it was already registered with this FlutterEngine (io.flutter.embedding.engine.FlutterEngine@1eb61c7).
+W/FlutterEngineCxnRegstry(28871): Attempted to register plugin (K5.m@bcfc224) but it was already registered with this FlutterEngine (io.flutter.embedding.engine.FlutterEngine@1eb61c7).
+W/FlutterEngineCxnRegstry(28871): Attempted to register plugin (gc.b@74d18d) but it was already registered with this FlutterEngine (io.flutter.embedding.engine.FlutterEngine@1eb61c7).
+W/FlutterEngineCxnRegstry(28871): Attempted to register plugin (dl.b@9a45f42) but it was already registered with this FlutterEngine (io.flutter.embedding.engine.FlutterEngine@1eb61c7).
+W/FlutterEngineCxnRegstry(28871): Attempted to register plugin (io.flutter.plugins.sharedpreferences.SharedPreferencesPlugin@f0edb53) but it was already registered with this FlutterEngine (io.flutter.embedding.engine.FlutterEngine@1eb61c7).
+W/FlutterEngineCxnRegstry(28871): Attempted to register plugin (Pb.d@558dc90) but it was already registered with this FlutterEngine (io.flutter.embedding.engine.FlutterEngine@1eb61c7).
+W/FlutterEngineCxnRegstry(28871): Attempted to register plugin (Fh.E@169f989) but it was already registered with this FlutterEngine (io.flutter.embedding.engine.FlutterEngine@1eb61c7).
+W/FlutterEngineCxnRegstry(28871): Attempted to register plugin (io.flutter.plugins.urllauncher.UrlLauncherPlugin@d1d2d8e) but it was already registered with this FlutterEngine (io.flutter.embedding.engine.FlutterEngine@1eb61c7).
+W/FlutterEngineCxnRegstry(28871): Attempted to register plugin (io.flutter.plugins.videoplayer.VideoPlayerPlugin@321d9af) but it was already registered with this FlutterEngine (io.flutter.embedding.engine.FlutterEngine@1eb61c7).
+W/FlutterEngineCxnRegstry(28871): Attempted to register plugin (io.flutter.plugins.webviewflutter.WebViewFlutterPlugin@21731bc) but it was already registered with this FlutterEngine (io.flutter.embedding.engine.FlutterEngine@1eb61c7).
+I/flutter (28871): Dart: Calling getAndSaveSharedPrefData
+I/flutter (28871): Dart: key -> user_first_name
+I/flutter (28871): Pushed: Home
+I/flutter (28871): Pushed: Home
+I/flutter (28871): BottomSheetObserver: New top route is Home
+I/flutter (28871): Dart: show Bottom NavBar
+I/flutter (28871): Dart: setSelectedScreenTab tabs
+I/flutter (28871): Top route: Home
+D/FlutterGeolocator(28871): Creating service.
+D/FlutterGeolocator(28871): Binding to location service.
+I/flutter (28871): Dart: Calling getAndSaveSharedPrefData
+I/flutter (28871): Dart: key -> INSURANCE_SETTINGS
+I/flutter (28871): Dart: calling checkConnectivity()
+I/flutter (28871): Event sent: button_impression_delivered, Event Properties {company_id: , button_id: BT001, button_name: All Products, button_type: top_left}.
+I/flutter (28871): Event sent: button_impression_delivered, Event Properties {company_id: , button_id: BT002, button_name: wallet recharge, button_type: top_right}.
+I/flutter (28871): Event sent: widget_impression_delivered, Event Properties {company_id: , widget_id: WD001, widget_name: quick_links_1*3, widget_type: static_1*3}.
+I/flutter (28871): Event sent: widget_impression_delivered, Event Properties {company_id: , widget_id: WD003, widget_name: Actions_Needing_Attention_3*2, widget_type: dynamic_3*2}.
+D/FlutterGeolocator(28871): Flutter engine connected. Connected engine count 1
+I/flutter (28871): Event sent: page_visit, Event Properties {page_name: home_screen}.
+I/flutter (28871): Event sent: home_page_visit, Event Properties {company_id: }.
+I/flutter (28871): Event sent: widget_impression_delivered, Event Properties {company_id: , widget_id: WD002, widget_name: Dashboard_1*2, widget_type: static_1*2}.
+I/flutter (28871): from PopulateActionNeededDataState initState
+I/flutter (28871): Event sent: widget_impression_delivered, Event Properties {company_id: , widget_id: WD003, widget_name: Actions_Needing_Attention_3*2, widget_type: dynamic_3*2}.
+I/flutter (28871): Token is empty
+I/flutter (28871): Token is empty
+I/flutter (28871): Token is empty
+I/flutter (28871): Token is empty
+I/flutter (28871): Token is empty
+I/flutter (28871): Token is empty
+I/flutter (28871): Token is empty
+I/flutter (28871): Token is empty
+I/flutter (28871): data in user--1
+I/flutter (28871): Error fetching new orders data: Exception: Token is empty
+I/flutter (28871): Error fetching NDR data: Exception: Token is empty
+I/flutter (28871): Error fetching Pickup Error data: Exception: Token is empty
+I/flutter (28871): Error fetching Returns data: Exception: Token is empty
+I/flutter (28871): Error fetching Orders with Weight Discrepancies data: Exception: Token is empty
+I/flutter (28871): Token is empty
+I/flutter (28871): Error Kam Details data: Exception: Token is empty
+I/flutter (28871): Error fetching order tags filters: Exception: Token is empty
+I/flutter (28871): Error fetching country data: Exception: Token is empty
+I/flutter (28871): Error fetching manifest filters data: Exception: Token is empty
+I/flutter (28871): Error fetching Delivery Delay data: Exception: Token is empty
+I/flutter (28871): Dart: getAndSaveSharedPrefData: user_first_name - value: Hirok - type: String
+I/flutter (28871): Error :- MissingPluginException(No implementation found for method setSelectedScreenTab on channel com.shiprocket.shiprocket_home/home_screen)
+I/flutter (28871): Stack :- #0      MethodChannel._invokeMethod (package:flutter/src/services/platform_channel.dart:368)
+I/flutter (28871): <asynchronous suspension>
+I/flutter (28871): #1      HomeServices.setSelectedScreenTab (package:shiprocket_home/platformService/home_services.dart:182)
+I/flutter (28871): <asynchronous suspension>
+I/flutter (28871): 
+I/flutter (28871): Uncaught error: MissingPluginException(No implementation found for method setSelectedScreenTab on channel com.shiprocket.shiprocket_home/home_screen)
+I/flutter (28871): Stack trace: #0      MethodChannel._invokeMethod (package:flutter/src/services/platform_channel.dart:368)
+I/flutter (28871): <asynchronous suspension>
+I/flutter (28871): #1      HomeServices.setSelectedScreenTab (package:shiprocket_home/platformService/home_services.dart:182)
+I/flutter (28871): <asynchronous suspension>
+I/flutter (28871): 
+I/flutter (28871): Dart: getAndSaveSharedPrefData: INSURANCE_SETTINGS - value: false - type: String
+I/flutter (28871): Error :- MissingPluginException(No implementation found for method checkConnectivity on channel com.shiprocket.shiprocket_home/home_screen)
+I/flutter (28871): Stack :- #0      MethodChannel._invokeMethod (package:flutter/src/services/platform_channel.dart:368)
+I/flutter (28871): <asynchronous suspension>
+I/flutter (28871): #1      HomeServices.checkConnectivity (package:shiprocket_home/platformService/home_services.dart:264)
+I/flutter (28871): <asynchronous suspension>
+I/flutter (28871): #2      _SrHomePageState.checkConnectivity (package:shiprocket_home/screens/home/sr_home_page.dart:327)
+I/flutter (28871): <asynchronous suspension>
+I/flutter (28871): 
+I/flutter (28871): Uncaught error: MissingPluginException(No implementation found for method checkConnectivity on channel com.shiprocket.shiprocket_home/home_screen)
+I/flutter (28871): Stack trace: #0      MethodChannel._invokeMethod (package:flutter/src/services/platform_channel.dart:368)
+I/flutter (28871): <asynchronous suspension>
+I/flutter (28871): #1      HomeServices.checkConnectivity (package:shiprocket_home/platformService/home_services.dart:264)
+I/flutter (28871): <asynchronous suspension>
+I/flutter (28871): #2      _SrHomePageState.checkConnectivity (package:shiprocket_home/screens/home/sr_home_page.dart:327)
+I/flutter (28871): <asynchronous suspension>
+I/flutter (28871): 
+I/flutter (28871): Error :- MissingPluginException(No implementation found for method setNativeEvent on channel com.shiprocket.shiprocket_home/home_screen)
+I/flutter (28871): Stack :- #0      MethodChannel._invokeMethod (package:flutter/src/services/platform_channel.dart:368)
+I/flutter (28871): <asynchronous suspension>
+I/flutter (28871): #1      HomeServices.setNativeEvent (package:shiprocket_home/platformService/home_services.dart:195)
+I/flutter (28871): <asynchronous suspension>
+I/flutter (28871): 
+I/flutter (28871): Uncaught error: MissingPluginException(No implementation found for method setNativeEvent on channel com.shiprocket.shiprocket_home/home_screen)
+I/flutter (28871): Stack trace: #0      MethodChannel._invokeMethod (package:flutter/src/services/platform_channel.dart:368)
+I/flutter (28871): <asynchronous suspension>
+I/flutter (28871): #1      HomeServices.setNativeEvent (package:shiprocket_home/platformService/home_services.dart:195)
+I/flutter (28871): <asynchronous suspension>
+I/flutter (28871): 
+I/flutter (28871): Error :- MissingPluginException(No implementation found for method setNativeEvent on channel com.shiprocket.shiprocket_home/home_screen)
+I/flutter (28871): Stack :- #0      MethodChannel._invokeMethod (package:flutter/src/services/platform_channel.dart:368)
+I/flutter (28871): <asynchronous suspension>
+I/flutter (28871): #1      HomeServices.setNativeEvent (package:shiprocket_home/platformService/home_services.dart:195)
+I/flutter (28871): <asynchronous suspension>
+I/flutter (28871): 
+I/flutter (28871): Uncaught error: MissingPluginException(No implementation found for method setNativeEvent on channel com.shiprocket.shiprocket_home/home_screen)
+I/flutter (28871): Stack trace: #0      MethodChannel._invokeMethod (package:flutter/src/services/platform_channel.dart:368)
+I/flutter (28871): <asynchronous suspension>
+I/flutter (28871): #1      HomeServices.setNativeEvent (package:shiprocket_home/platformService/home_services.dart:195)
+I/flutter (28871): <asynchronous suspension>
+I/flutter (28871): 
+I/flutter (28871): Error :- MissingPluginException(No implementation found for method setNativeEvent on channel com.shiprocket.shiprocket_home/home_screen)
+I/flutter (28871): Stack :- #0      MethodChannel._invokeMethod (package:flutter/src/services/platform_channel.dart:368)
+I/flutter (28871): <asynchronous suspension>
+I/flutter (28871): #1      HomeServices.setNativeEvent (package:shiprocket_home/platformService/home_services.dart:195)
+I/flutter (28871): <asynchronous suspension>
+I/flutter (28871): 
+I/flutter (28871): Uncaught error: MissingPluginException(No implementation found for method setNativeEvent on channel com.shiprocket.shiprocket_home/home_screen)
+I/flutter (28871): Stack trace: #0      MethodChannel._invokeMethod (package:flutter/src/services/platform_channel.dart:368)
+I/flutter (28871): <asynchronous suspension>
+I/flutter (28871): #1      HomeServices.setNativeEvent (package:shiprocket_home/platformService/home_services.dart:195)
+I/flutter (28871): <asynchronous suspension>
+I/flutter (28871): 
+I/flutter (28871): Error :- MissingPluginException(No implementation found for method setNativeEvent on channel com.shiprocket.shiprocket_home/home_screen)
+I/flutter (28871): Stack :- #0      MethodChannel._invokeMethod (package:flutter/src/services/platform_channel.dart:368)
+I/flutter (28871): <asynchronous suspension>
+I/flutter (28871): #1      HomeServices.setNativeEvent (package:shiprocket_home/platformService/home_services.dart:195)
+I/flutter (28871): <asynchronous suspension>
+I/flutter (28871): 
+I/flutter (28871): Uncaught error: MissingPluginException(No implementation found for method setNativeEvent on channel com.shiprocket.shiprocket_home/home_screen)
+I/flutter (28871): Stack trace: #0      MethodChannel._invokeMethod (package:flutter/src/services/platform_channel.dart:368)
+I/flutter (28871): <asynchronous suspension>
+I/flutter (28871): #1      HomeServices.setNativeEvent (package:shiprocket_home/platformService/home_services.dart:195)
+I/flutter (28871): <asynchronous suspension>
+I/flutter (28871): 
+I/flutter (28871): Error :- MissingPluginException(No implementation found for method setNativeEvent on channel com.shiprocket.shiprocket_home/home_screen)
+I/flutter (28871): Stack :- #0      MethodChannel._invokeMethod (package:flutter/src/services/platform_channel.dart:368)
+I/flutter (28871): <asynchronous suspension>
+I/flutter (28871): #1      HomeServices.setNativeEvent (package:shiprocket_home/platformService/home_services.dart:195)
+I/flutter (28871): <asynchronous suspension>
+I/flutter (28871): 
+I/flutter (28871): Uncaught error: MissingPluginException(No implementation found for method setNativeEvent on channel com.shiprocket.shiprocket_home/home_screen)
+I/flutter (28871): Stack trace: #0      MethodChannel._invokeMethod (package:flutter/src/services/platform_channel.dart:368)
+I/flutter (28871): <asynchronous suspension>
+I/flutter (28871): #1      HomeServices.setNativeEvent (package:shiprocket_home/platformService/home_services.dart:195)
+I/flutter (28871): <asynchronous suspension>
+I/flutter (28871): 
+I/flutter (28871): Error :- MissingPluginException(No implementation found for method setNativeEvent on channel com.shiprocket.shiprocket_home/home_screen)
+I/flutter (28871): Stack :- #0      MethodChannel._invokeMethod (package:flutter/src/services/platform_channel.dart:368)
+I/flutter (28871): <asynchronous suspension>
+I/flutter (28871): #1      HomeServices.setNativeEvent (package:shiprocket_home/platformService/home_services.dart:195)
+I/flutter (28871): <asynchronous suspension>
+I/flutter (28871): 
+I/flutter (28871): Uncaught error: MissingPluginException(No implementation found for method setNativeEvent on channel com.shiprocket.shiprocket_home/home_screen)
+I/flutter (28871): Stack trace: #0      MethodChannel._invokeMethod (package:flutter/src/services/platform_channel.dart:368)
+I/flutter (28871): <asynchronous suspension>
+I/flutter (28871): #1      HomeServices.setNativeEvent (package:shiprocket_home/platformService/home_services.dart:195)
+I/flutter (28871): <asynchronous suspension>
+I/flutter (28871): 
+I/flutter (28871): Error :- MissingPluginException(No implementation found for method setNativeEvent on channel com.shiprocket.shiprocket_home/home_screen)
+I/flutter (28871): Stack :- #0      MethodChannel._invokeMethod (package:flutter/src/services/platform_channel.dart:368)
+I/flutter (28871): <asynchronous suspension>
+I/flutter (28871): #1      HomeServices.setNativeEvent (package:shiprocket_home/platformService/home_services.dart:195)
+I/flutter (28871): <asynchronous suspension>
+I/flutter (28871): 
+I/flutter (28871): Uncaught error: MissingPluginException(No implementation found for method setNativeEvent on channel com.shiprocket.shiprocket_home/home_screen)
+I/flutter (28871): Stack trace: #0      MethodChannel._invokeMethod (package:flutter/src/services/platform_channel.dart:368)
+I/flutter (28871): <asynchronous suspension>
+I/flutter (28871): #1      HomeServices.setNativeEvent (package:shiprocket_home/platformService/home_services.dart:195)
+I/flutter (28871): <asynchronous suspension>
+I/flutter (28871): 
+I/flutter (28871): Error :- MissingPluginException(No implementation found for method setNativeEvent on channel com.shiprocket.shiprocket_home/home_screen)
+I/flutter (28871): Stack :- #0      MethodChannel._invokeMethod (package:flutter/src/services/platform_channel.dart:368)
+I/flutter (28871): <asynchronous suspension>
+I/flutter (28871): #1      HomeServices.setNativeEvent (package:shiprocket_home/platformService/home_services.dart:195)
+I/flutter (28871): <asynchronous suspension>
+I/flutter (28871): 
+I/flutter (28871): Uncaught error: MissingPluginException(No implementation found for method setNativeEvent on channel com.shiprocket.shiprocket_home/home_screen)
+I/flutter (28871): Stack trace: #0      MethodChannel._invokeMethod (package:flutter/src/services/platform_channel.dart:368)
+I/flutter (28871): <asynchronous suspension>
+I/flutter (28871): #1      HomeServices.setNativeEvent (package:shiprocket_home/platformService/home_services.dart:195)
+I/flutter (28871): <asynchronous suspension>
+I/flutter (28871): 
+I/flutter (28871): Dart: Calling getAndSaveSharedPrefData
+I/flutter (28871): Dart: key -> user_last_name
+I/flutter (28871): Error in logFirebaseCrash: MissingPluginException(No implementation found for method logFirebaseCrash on channel com.shiprocket.shiprocket_home/home_screen)
+I/flutter (28871): Error in logFirebaseCrash: MissingPluginException(No implementation found for method logFirebaseCrash on channel com.shiprocket.shiprocket_home/home_screen)
+I/flutter (28871): Error in logFirebaseCrash: MissingPluginException(No implementation found for method logFirebaseCrash on channel com.shiprocket.shiprocket_home/home_screen)
+I/flutter (28871): Error in logFirebaseCrash: MissingPluginException(No implementation found for method logFirebaseCrash on channel com.shiprocket.shiprocket_home/home_screen)
+I/flutter (28871): Error in logFirebaseCrash: MissingPluginException(No implementation found for method logFirebaseCrash on channel com.shiprocket.shiprocket_home/home_screen)
+I/flutter (28871): Error in logFirebaseCrash: MissingPluginException(No implementation found for method logFirebaseCrash on channel com.shiprocket.shiprocket_home/home_screen)
+I/flutter (28871): Error in logFirebaseCrash: MissingPluginException(No implementation found for method logFirebaseCrash on channel com.shiprocket.shiprocket_home/home_screen)
+I/flutter (28871): Error in logFirebaseCrash: MissingPluginException(No implementation found for method logFirebaseCrash on channel com.shiprocket.shiprocket_home/home_screen)
+I/flutter (28871): Error in logFirebaseCrash: MissingPluginException(No implementation found for method logFirebaseCrash on channel com.shiprocket.shiprocket_home/home_screen)
+I/flutter (28871): Error in logFirebaseCrash: MissingPluginException(No implementation found for method logFirebaseCrash on channel com.shiprocket.shiprocket_home/home_screen)
+I/flutter (28871): Dart: getAndSaveSharedPrefData: user_last_name - value: Jyoti Bordoloi - type: String
+I/flutter (28871): [Clarity] A: Clarity's logging is disabled by default in non-debug builds for optimal performance 
+I/flutter (28871): Dart: Calling getAndSaveSharedPrefData
+I/flutter (28871): Dart: key -> user_mobile
+I/flutter (28871): Dart: getAndSaveSharedPrefData: user_mobile - value: 8753000825 - type: String
+I/flutter (28871): Dart: Calling getAndSaveSharedPrefData
+I/flutter (28871): Dart: key -> user_email
+W/WindowOnBackDispatcher(21213): OnBackInvokedCallback is not enabled for the application.
+W/WindowOnBackDispatcher(21213): Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+I/flutter (28871): Dart: getAndSaveSharedPrefData: user_email - value: arenorwears25@gmail.com - type: String
+I/flutter (28871): Dart: Calling getAndSaveSharedPrefData
+I/flutter (28871): Dart: key -> user_token
+I/flutter (28871): Dart: getAndSaveSharedPrefData: user_token - value: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vYXBpdjIuc2hpcHJvY2tldC5pbi92MS9hcHAvYXV0aC9sb2dpbi9hbmRyb2lkLWdvb2dsZS9jYWxsYmFjayIsImlhdCI6MTc3MTM5NzgxNSwiZXhwIjoxNzcyMjYxODE1LCJuYmYiOjE3NzEzOTc4MTUsImp0aSI6IjBHbldMZXZYenFtWjRnT1kiLCJzdWIiOjgzOTY5MDIsInBydiI6IjA1YmI2NjBmNjdjYWM3NDVmN2IzZGExZWVmMTk3MTk1YTIxMWU2ZDkiLCJjaWQiOjgxNDk4MDh9.2tbJtlE75vYxgXWT8n4h3jjX1mma9Jy-03kxjw3pbIA - type: String
+I/flutter (28871): Dart: Calling getAndSaveSharedPrefData
+I/flutter (28871): Dart: key -> refresh_token
+I/flutter (28871): Dart: getAndSaveSharedPrefData: refresh_token - value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjaWQiOjgxNDk4MDgsInN1YiI6ODM5NjkwMiwiaXNfcmVmcmVzaF90b2tlbiI6dHJ1ZSwiaXNfYWRtaW4iOmZhbHNlLCJhZG1pbl91c2VyX2lkIjpudWxsLCJleHAiOjE3NzcyMjAyODgsImp0aSI6IlQ1c3FjSmZBZmx3V2VGdGUiLCJpYXQiOjE3NzIwMzYyODgsImlzcyI6Imh0dHBzOi8vc3ItYXV0aC5zaGlwcm9ja2V0LmluL2F1dGhvcml6ZS91c2VyIiwibmJmIjoxNzcyMDM2Mjg4fQ.oxgfO5sdQCAVoYv6RhdRyQpcqzcVlrf0b1GlDzynpiE - type: String
+I/flutter (28871): Dart: Calling getAndSaveSharedPrefData
+I/flutter (28871): Dart: key -> user_id
+I/flutter (28871): Dart: getAndSaveSharedPrefData: user_id - value: 8396902 - type: String
+I/flutter (28871): Dart: Calling getAndSaveSharedPrefData
+I/flutter (28871): Dart: key -> user_company_id
+I/flutter (28871): Dart: getAndSaveSharedPrefData: user_company_id - value: 8149808 - type: String
+I/flutter (28871): Checking if LT Seller
+I/flutter (28871): Dart: opening isLtSeller
+I/flutter (28871): Dart: opening isRocketExpress
+I/flutter (28871): Dart: calling isSetuEnabled()
+I/flutter (28871): Dart: calling kycNotDoneOrAdharOnly()
+I/flutter (28871): Dart: calling isWacTrialAllowed()
+I/flutter (28871): Error :- MissingPluginException(No implementation found for method isLtSeller on channel com.shiprocket.shiprocket_home/home_screen)
+I/flutter (28871): Stack :- #0      MethodChannel._invokeMethod (package:flutter/src/services/platform_channel.dart:368)
+I/flutter (28871): <asynchronous suspension>
+I/flutter (28871): #1      HomeServices.isLtSeller (package:shiprocket_home/platformService/home_services.dart:254)
+I/flutter (28871): <asynchronous suspension>
+I/flutter (28871): 
+I/flutter (28871): Uncaught error: MissingPluginException(No implementation found for method isLtSeller on channel com.shiprocket.shiprocket_home/home_screen)
+I/flutter (28871): Stack trace: #0      MethodChannel._invokeMethod (package:flutter/src/services/platform_channel.dart:368)
+I/flutter (28871): <asynchronous suspension>
+I/flutter (28871): #1      HomeServices.isLtSeller (package:shiprocket_home/platformService/home_services.dart:254)
+I/flutter (28871): <asynchronous suspension>
+I/flutter (28871): 
+I/flutter (28871): Error :- MissingPluginException(No implementation found for method isRocketExpress on channel com.shiprocket.shiprocket_home/home_screen)
+I/flutter (28871): Stack :- #0      MethodChannel._invokeMethod (package:flutter/src/services/platform_channel.dart:368)
+I/flutter (28871): <asynchronous suspension>
+I/flutter (28871): #1      HomeServices.isRocketExpress (package:shiprocket_home/platformService/home_services.dart:275)
+I/flutter (28871): <asynchronous suspension>
+I/flutter (28871): 
+I/flutter (28871): Uncaught error: MissingPluginException(No implementation found for method isRocketExpress on channel com.shiprocket.shiprocket_home/home_screen)
+I/flutter (28871): Stack trace: #0      MethodChannel._invokeMethod (package:flutter/src/services/platform_channel.dart:368)
+I/flutter (28871): <asynchronous suspension>
+I/flutter (28871): #1      HomeServices.isRocketExpress (package:shiprocket_home/platformService/home_services.dart:275)
+I/flutter (28871): <asynchronous suspension>
+I/flutter (28871): 
+I/flutter (28871): Error :- MissingPluginException(No implementation found for method isSetuEnabled on channel com.shiprocket.shiprocket_home/home_screen)
+I/flutter (28871): Stack :- #0      MethodChannel._invokeMethod (package:flutter/src/services/platform_channel.dart:368)
+I/flutter (28871): <asynchronous suspension>
+I/flutter (28871): #1      HomeServices.isSetuEnabled (package:shiprocket_home/platformService/home_services.dart:287)
+I/flutter (28871): <asynchronous suspension>
+I/flutter (28871): 
+I/flutter (28871): Uncaught error: MissingPluginException(No implementation found for method isSetuEnabled on channel com.shiprocket.shiprocket_home/home_screen)
+I/flutter (28871): Stack trace: #0      MethodChannel._invokeMethod (package:flutter/src/services/platform_channel.dart:368)
+I/flutter (28871): <asynchronous suspension>
+I/flutter (28871): #1      HomeServices.isSetuEnabled (package:shiprocket_home/platformService/home_services.dart:287)
+I/flutter (28871): <asynchronous suspension>
+I/flutter (28871): 
+I/flutter (28871): Error :- MissingPluginException(No implementation found for method kycNotDoneOrAdharOnly on channel com.shiprocket.shiprocket_home/home_screen)
+I/flutter (28871): Stack :- #0      MethodChannel._invokeMethod (package:flutter/src/services/platform_channel.dart:368)
+I/flutter (28871): <asynchronous suspension>
+I/flutter (28871): #1      HomeServices.kycNotDoneOrAdharOnly (package:shiprocket_home/platformService/home_services.dart:310)
+I/flutter (28871): <asynchronous suspension>
+I/flutter (28871): 
+I/flutter (28871): Uncaught error: MissingPluginException(No implementation found for method kycNotDoneOrAdharOnly on channel com.shiprocket.shiprocket_home/home_screen)
+I/flutter (28871): Stack trace: #0      MethodChannel._invokeMethod (package:flutter/src/services/platform_channel.dart:368)
+I/flutter (28871): <asynchronous suspension>
+I/flutter (28871): #1      HomeServices.kycNotDoneOrAdharOnly (package:shiprocket_home/platformService/home_services.dart:310)
+I/flutter (28871): <asynchronous suspension>
+I/flutter (28871): 
+I/flutter (28871): Error :- MissingPluginException(No implementation found for method is_wac_trial_allowed on channel com.shiprocket.shiprocket_home/home_screen)
+I/flutter (28871): Stack :- #0      MethodChannel._invokeMethod (package:flutter/src/services/platform_channel.dart:368)
+I/flutter (28871): <asynchronous suspension>
+I/flutter (28871): #1      HomeServices.isWacTrialAllowed (package:shiprocket_home/platformService/home_services.dart:299)
+I/flutter (28871): <asynchronous suspension>
+I/flutter (28871): 
+I/flutter (28871): Uncaught error: MissingPluginException(No implementation found for method is_wac_trial_allowed on channel com.shiprocket.shiprocket_home/home_screen)
+I/flutter (28871): Stack trace: #0      MethodChannel._invokeMethod (package:flutter/src/services/platform_channel.dart:368)
+I/flutter (28871): <asynchronous suspension>
+I/flutter (28871): #1      HomeServices.isWacTrialAllowed (package:shiprocket_home/platformService/home_services.dart:299)
+I/flutter (28871): <asynchronous suspension>
+I/flutter (28871): 
+I/flutter (28871): Error in logFirebaseCrash: MissingPluginException(No implementation found for method logFirebaseCrash on channel com.shiprocket.shiprocket_home/home_screen)
+I/flutter (28871): Error in logFirebaseCrash: MissingPluginException(No implementation found for method logFirebaseCrash on channel com.shiprocket.shiprocket_home/home_screen)
+I/flutter (28871): Error in logFirebaseCrash: MissingPluginException(No implementation found for method logFirebaseCrash on channel com.shiprocket.shiprocket_home/home_screen)
+I/flutter (28871): Error in logFirebaseCrash: MissingPluginException(No implementation found for method logFirebaseCrash on channel com.shiprocket.shiprocket_home/home_screen)
+I/flutter (28871): Error in logFirebaseCrash: MissingPluginException(No implementation found for method logFirebaseCrash on channel com.shiprocket.shiprocket_home/home_screen)
+D/WM-DelayedWorkTracker(21213): Scheduling work 2a36e7dc-cb56-4589-aa6e-1975ba08b352
+D/WM-GreedyScheduler(21213): Starting work for 2a36e7dc-cb56-4589-aa6e-1975ba08b352
+D/WM-Processor(21213): Processor: processing WorkGenerationalId(workSpecId=2a36e7dc-cb56-4589-aa6e-1975ba08b352, generation=37)
+D/WM-WorkerWrapper(21213): Starting work for dev.fluttercommunity.workmanager.BackgroundWorker
+I/AdrenoVK-0(21213): QUALCOMM build          : 0c393b63cf, I94e2bd5684
+I/AdrenoVK-0(21213): Build Date              : 05/02/25
+I/AdrenoVK-0(21213): Shader Compiler Version : EV031.36.08.33
+I/AdrenoVK-0(21213): Local Branch            : 
+I/AdrenoVK-0(21213): Remote Branch           : refs/tags/AU_LINUX_ANDROID_LA.VENDOR.1.0.R1.11.00.00.816.269
+I/AdrenoVK-0(21213): Remote Branch           : NONE
+I/AdrenoVK-0(21213): Reconstruct Branch      : NOTHING
+I/AdrenoVK-0(21213): Build Config            : S P 12.1.1 AArch64
+I/AdrenoVK-0(21213): Driver Path             : /vendor/lib64/hw/vulkan.adreno.so
+I/AdrenoVK-0(21213): Driver Version          : 0615.98
+I/AdrenoVK-0(21213): PFP                     : 0x01710181
+I/AdrenoVK-0(21213): ME                      : 0x00000000
+I/AdrenoVK-0(21213): Application Name    : Impeller
+I/AdrenoVK-0(21213): Application Version : 0x00800000
+I/AdrenoVK-0(21213): Engine Name         : Impeller
+I/AdrenoVK-0(21213): Engine Version      : 0x00400000
+I/AdrenoVK-0(21213): Api Version         : 0x00401000
+I/flutter (21213): [IMPORTANT:flutter/shell/platform/android/android_context_vk_impeller.cc(62)] Using the Impeller rendering backend (Vulkan).
+I/WM-WorkerWrapper(21213): Worker result SUCCESS for Work [ id=2a36e7dc-cb56-4589-aa6e-1975ba08b352, tags={ dev.fluttercommunity.workmanager.BackgroundWorker } ]
+D/WM-Processor(21213): Processor 2a36e7dc-cb56-4589-aa6e-1975ba08b352 executed; reschedule = false
+D/WM-GreedyScheduler(21213): Cancelling work ID 2a36e7dc-cb56-4589-aa6e-1975ba08b352
+D/WM-SystemJobScheduler(21213): Scheduling work ID 2a36e7dc-cb56-4589-aa6e-1975ba08b352Job ID 300
+D/VRI[MainActivity](21213): visibilityChanged oldVisibility=true newVisibility=false
+D/Surface (21213): Surface::disconnect
+D/BufferQueueProducer(21213): [SurfaceView[com.example.studentcompanionapp/com.example.studentcompanionapp.MainActivity](BLAST)#241788(BLAST Consumer)pid:21213](id:52dd00000003,api:1,p:21213,c:21213) disconnect: api 1
+D/Surface (21213): Surface::disconnect
+D/BufferQueueProducer(21213): [SurfaceView[com.example.studentcompanionapp/com.example.studentcompanionapp.MainActivity](BLAST)#241788(BLAST Consumer)pid:21213](id:52dd00000003,api:0,p:-1,c:21213) disconnect: api -1
+D/Surface (21213): Surface::disconnect
+D/BufferQueueProducer(21213): [com.example.studentcompanionapp/com.example.studentcompanionapp.MainActivity#241785(BLAST Consumer)pid:21213](id:52dd00000002,api:1,p:21213,c:21213) disconnect: api 1

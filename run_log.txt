@@ -1,0 +1,261 @@
+﻿Launching lib\main.dart on motorola edge 50 fusion in debug mode...
+Running Gradle task 'assembleDebug'...                             23.0s
+ΓêÜ Built build\app\outputs\flutter-apk\app-debug.apk
+Installing build\app\outputs\flutter-apk\app-debug.apk...           6.4s
+D/FlutterJNI(20503): Beginning load of flutter...
+D/FlutterJNI(20503): flutter (null) was loaded normally!
+I/flutter (20503): [IMPORTANT:flutter/shell/platform/android/android_context_vk_impeller.cc(62)] Using the Impeller rendering backend (Vulkan).
+I/flutter (20503): Error loading settings: type 'Null' is not a subtype of type 'String' in type cast
+E/flutter (20503): [ERROR:flutter/runtime/dart_vm_initializer.cc(40)] Unhandled Exception: type 'Null' is not a subtype of type 'String' in type cast
+E/flutter (20503): #0      AppSettingsAdapter.read (package:studentcompanionapp/data/models/settings.g.dart:26:27)
+E/flutter (20503): #1      BinaryReaderImpl.read (package:hive/src/binary/binary_reader_impl.dart:328:33)
+E/flutter (20503): #2      BinaryReaderImpl.readFrame (package:hive/src/binary/binary_reader_impl.dart:276:26)
+E/flutter (20503): #3      FrameHelper.framesFromBytes (package:hive/src/binary/frame_helper.dart:21:26)
+E/flutter (20503): #4      FrameIoHelper.framesFromFile (package:hive/src/io/frame_io_helper.dart:42:12)
+E/flutter (20503): <asynchronous suspension>
+E/flutter (20503): #5      StorageBackendVm.initialize (package:hive/src/backend/vm/storage_backend_vm.dart:86:11)
+E/flutter (20503): <asynchronous suspension>
+E/flutter (20503): #6      HiveImpl._openBox (package:hive/src/hive_impl.dart:111:9)
+E/flutter (20503): <asynchronous suspension>
+E/flutter (20503): #7      HiveImpl.openBox (package:hive/src/hive_impl.dart:142:12)
+E/flutter (20503): <asynchronous suspension>
+E/flutter (20503): #8      SettingsController.init (package:studentcompanionapp/domain/providers/theme_provider.dart:93:22)
+E/flutter (20503): <asynchronous suspension>
+E/flutter (20503): #9      main (package:studentcompanionapp/main.dart:48:3)
+E/flutter (20503): <asynchronous suspension>
+E/flutter (20503): 
+I/flutter (20503): Error loading theme: type 'Null' is not a subtype of type 'String' in type cast
+E/flutter (20503): [ERROR:flutter/runtime/dart_vm_initializer.cc(40)] Unhandled Exception: type 'Null' is not a subtype of type 'String' in type cast
+E/flutter (20503): #0      AppSettingsAdapter.read (package:studentcompanionapp/data/models/settings.g.dart:26:27)
+E/flutter (20503): #1      BinaryReaderImpl.read (package:hive/src/binary/binary_reader_impl.dart:328:33)
+E/flutter (20503): #2      BinaryReaderImpl.readFrame (package:hive/src/binary/binary_reader_impl.dart:276:26)
+E/flutter (20503): #3      FrameHelper.framesFromBytes (package:hive/src/binary/frame_helper.dart:21:26)
+E/flutter (20503): #4      FrameIoHelper.framesFromFile (package:hive/src/io/frame_io_helper.dart:42:12)
+E/flutter (20503): <asynchronous suspension>
+E/flutter (20503): #5      StorageBackendVm.initialize (package:hive/src/backend/vm/storage_backend_vm.dart:86:11)
+E/flutter (20503): <asynchronous suspension>
+E/flutter (20503): #6      HiveImpl._openBox (package:hive/src/hive_impl.dart:111:9)
+E/flutter (20503): <asynchronous suspension>
+E/flutter (20503): #7      HiveImpl.openBox (package:hive/src/hive_impl.dart:142:12)
+E/flutter (20503): <asynchronous suspension>
+E/flutter (20503): #8      ThemeController.init (package:studentcompanionapp/domain/providers/theme_provider.dart:23:22)
+E/flutter (20503): <asynchronous suspension>
+E/flutter (20503): #9      main (package:studentcompanionapp/main.dart:49:3)
+E/flutter (20503): <asynchronous suspension>
+E/flutter (20503): 
+Syncing files to device motorola edge 50 fusion...              
+D/WM-GreedyScheduler(20503): Cancelling work ID 2a36e7dc-cb56-4589-aa6e-1975ba08b352
+D/WM-SystemJobScheduler(20503): Scheduling work ID 2a36e7dc-cb56-4589-aa6e-1975ba08b352Job ID 297
+Syncing files to device motorola edge 50 fusion...                 214ms
+
+Flutter run key commands.
+r Hot reload. 
+R Hot restart.
+h List all available interactive commands.
+d Detach (terminate "flutter run" but leave application running).
+c Clear the screen
+q Quit (terminate the application on the device).
+
+A Dart VM Service on motorola edge 50 fusion is available at: http://127.0.0.1:62121/q2Y8iZBw_z8=/
+The Flutter DevTools debugger and profiler on motorola edge 50 fusion is available at: http://127.0.0.1:9101?uri=http://127.0.0.1:62121/q2Y8iZBw_z8=/
+I/Choreographer(20503): Skipped 110 frames!  The application may be doing too much work on its main thread.
+W/entcompanionapp(20503): Unable to open libdolphin.so: dlopen failed: library "libdolphin.so" not found.
+W/WindowOnBackDispatcher(20503): OnBackInvokedCallback is not enabled for the application.
+W/WindowOnBackDispatcher(20503): Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+D/ProfileInstaller(20503): Installing profile for com.example.studentcompanionapp
+W/entcompanionapp(20503): userfaultfd: MOVE ioctl seems unsupported: Connection timed out
+I/flutter (20503): Error saving settings: type 'Null' is not a subtype of type 'String' in type cast
+E/flutter (20503): [ERROR:flutter/runtime/dart_vm_initializer.cc(40)] Unhandled Exception: type 'Null' is not a subtype of type 'String' in type cast
+E/flutter (20503): #0      AppSettingsAdapter.read (package:studentcompanionapp/data/models/settings.g.dart:26:27)
+E/flutter (20503): #1      BinaryReaderImpl.read (package:hive/src/binary/binary_reader_impl.dart:328:33)
+E/flutter (20503): #2      BinaryReaderImpl.readFrame (package:hive/src/binary/binary_reader_impl.dart:276:26)
+E/flutter (20503): #3      FrameHelper.framesFromBytes (package:hive/src/binary/frame_helper.dart:21:26)
+E/flutter (20503): #4      FrameIoHelper.framesFromFile (package:hive/src/io/frame_io_helper.dart:42:12)
+E/flutter (20503): <asynchronous suspension>
+E/flutter (20503): #5      StorageBackendVm.initialize (package:hive/src/backend/vm/storage_backend_vm.dart:86:11)
+E/flutter (20503): <asynchronous suspension>
+E/flutter (20503): #6      HiveImpl._openBox (package:hive/src/hive_impl.dart:111:9)
+E/flutter (20503): <asynchronous suspension>
+E/flutter (20503): #7      HiveImpl.openBox (package:hive/src/hive_impl.dart:142:12)
+E/flutter (20503): <asynchronous suspension>
+E/flutter (20503): #8      SettingsController._saveSettings (package:studentcompanionapp/domain/providers/theme_provider.dart:111:24)
+E/flutter (20503): <asynchronous suspension>
+E/flutter (20503): #9      SettingsController.updateSettings (package:studentcompanionapp/domain/providers/theme_provider.dart:106:5)
+E/flutter (20503): <asynchronous suspension>
+E/flutter (20503): #10     SettingsController.updatePrimaryColor (package:studentcompanionapp/domain/providers/theme_provider.dart:157:7)
+E/flutter (20503): <asynchronous suspension>
+E/flutter (20503): 
+W/WindowOnBackDispatcher(20503): OnBackInvokedCallback is not enabled for the application.
+W/WindowOnBackDispatcher(20503): Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+I/flutter (20503): Error saving theme: type 'Null' is not a subtype of type 'String' in type cast
+E/flutter (20503): [ERROR:flutter/runtime/dart_vm_initializer.cc(40)] Unhandled Exception: type 'Null' is not a subtype of type 'String' in type cast
+E/flutter (20503): #0      AppSettingsAdapter.read (package:studentcompanionapp/data/models/settings.g.dart:26:27)
+E/flutter (20503): #1      BinaryReaderImpl.read (package:hive/src/binary/binary_reader_impl.dart:328:33)
+E/flutter (20503): #2      BinaryReaderImpl.readFrame (package:hive/src/binary/binary_reader_impl.dart:276:26)
+E/flutter (20503): #3      FrameHelper.framesFromBytes (package:hive/src/binary/frame_helper.dart:21:26)
+E/flutter (20503): #4      FrameIoHelper.framesFromFile (package:hive/src/io/frame_io_helper.dart:42:12)
+E/flutter (20503): <asynchronous suspension>
+E/flutter (20503): #5      StorageBackendVm.initialize (package:hive/src/backend/vm/storage_backend_vm.dart:86:11)
+E/flutter (20503): <asynchronous suspension>
+E/flutter (20503): #6      HiveImpl._openBox (package:hive/src/hive_impl.dart:111:9)
+E/flutter (20503): <asynchronous suspension>
+E/flutter (20503): #7      HiveImpl.openBox (package:hive/src/hive_impl.dart:142:12)
+E/flutter (20503): <asynchronous suspension>
+E/flutter (20503): #8      ThemeController._saveTheme (package:studentcompanionapp/domain/providers/theme_provider.dart:41:24)
+E/flutter (20503): <asynchronous suspension>
+E/flutter (20503): #9      ThemeController.setThemeMode (package:studentcompanionapp/domain/providers/theme_provider.dart:36:5)
+E/flutter (20503): <asynchronous suspension>
+E/flutter (20503): 
+I/ImeTracker(20503): com.example.studentcompanionapp:1a1e40bd: onRequestShow at ORIGIN_CLIENT reason SHOW_SOFT_INPUT fromUser false
+D/InputMethodManager(20503): showSoftInput() view=io.flutter.embedding.android.FlutterView{1dc4226 VFE...... .F....ID 0,0-1080,2400 #1 aid=1073741824} flags=0 reason=SHOW_SOFT_INPUT
+I/ImeTracker(20503): com.example.studentcompanionapp:6be886ea: onRequestShow at ORIGIN_CLIENT reason SHOW_SOFT_INPUT fromUser false
+D/InputMethodManager(20503): showSoftInput() view=io.flutter.embedding.android.FlutterView{1dc4226 VFE...... .F....ID 0,0-1080,2400 #1 aid=1073741824} flags=0 reason=SHOW_SOFT_INPUT
+I/AssistStructure(20503): Flattened final assist data: 520 bytes, containing 1 windows, 3 views
+D/InputConnectionAdaptor(20503): The input method toggled cursor monitoring on
+D/InsetsController(20503): show(ime(), fromIme=true)
+D/InsetsController(20503): show(ime(), fromIme=true)
+I/ImeTracker(20503): com.example.studentcompanionapp:6be886ea: onCancelled at PHASE_CLIENT_APPLY_ANIMATION
+W/InteractionJankMonitor(20503): Initializing without READ_DEVICE_CONFIG permission. enabled=false, interval=1, missedFrameThreshold=3, frameTimeThreshold=64, package=com.example.studentcompanionapp
+I/ImeTracker(20503): com.example.studentcompanionapp:1a1e40bd: onShown
+
+ΓòÉΓòÉΓòí EXCEPTION CAUGHT BY FOUNDATION LIBRARY Γò₧ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+The following UnmountedRefException was thrown while dispatching notifications for
+ValueNotifier<AppSettings>:
+Cannot use the Ref of Provider<AppSettings>#706bc after it has been disposed. This typically happens
+if:
+- A provider rebuilt, but the previous "build" was still pending and is still performing operations.
+  You should therefore either use `ref.onDispose` to cancel pending work, or
+  check `ref.mounted` after async gaps or anything that could invalidate the provider.
+- You tried to use Ref inside `onDispose` or other life-cycles.
+  This is not supported, as the provider is already being disposed.
+
+When the exception was thrown, this was the stack:
+#0      Ref._throwIfInvalidUsage (package:riverpod/src/core/ref.dart:236:7)
+#1      Ref.invalidateSelf (package:riverpod/src/core/ref.dart:333:5)
+#2      settingsProvider.<anonymous closure>.<anonymous closure> (package:studentcompanionapp/domain/providers/theme_provider.dart:170:9)
+#3      ChangeNotifier.notifyListeners (package:flutter/src/foundation/change_notifier.dart:435:24)
+#4      ValueNotifier.value= (package:flutter/src/foundation/change_notifier.dart:559:5)
+#5      SettingsController.updateSettings (package:studentcompanionapp/domain/providers/theme_provider.dart:105:23)
+#6      SettingsController.updateUserName (package:studentcompanionapp/domain/providers/theme_provider.dart:143:11)
+#7      _SettingsScreenState._showNameEditDialog.<anonymous closure>.<anonymous closure> (package:studentcompanionapp/presentation/screens/settings/settings_screen.dart:175:36)
+#8      _InkResponseState.handleTap (package:flutter/src/material/ink_well.dart:1204:21)
+#9      GestureRecognizer.invokeCallback (package:flutter/src/gestures/recognizer.dart:345:24)
+#10     TapGestureRecognizer.handleTapUp (package:flutter/src/gestures/tap.dart:758:11)
+#11     BaseTapGestureRecognizer._checkUp (package:flutter/src/gestures/tap.dart:383:5)
+#12     BaseTapGestureRecognizer.handlePrimaryPointer (package:flutter/src/gestures/tap.dart:314:7)
+#13     PrimaryPointerGestureRecognizer.handleEvent (package:flutter/src/gestures/recognizer.dart:721:9)
+#14     PointerRouter._dispatch (package:flutter/src/gestures/pointer_router.dart:97:12)
+#15     PointerRouter._dispatchEventToRoutes.<anonymous closure> (package:flutter/src/gestures/pointer_router.dart:142:9)
+#16     _LinkedHashMapMixin.forEach (dart:_compact_hash:764:13)
+#17     PointerRouter._dispatchEventToRoutes (package:flutter/src/gestures/pointer_router.dart:140:18)
+#18     PointerRouter.route (package:flutter/src/gestures/pointer_router.dart:130:7)
+#19     GestureBinding.handleEvent (package:flutter/src/gestures/binding.dart:528:19)
+#20     GestureBinding.dispatchEvent (package:flutter/src/gestures/binding.dart:498:22)
+#21     RendererBinding.dispatchEvent (package:flutter/src/rendering/binding.dart:473:11)
+#22     GestureBinding._handlePointerEventImmediately (package:flutter/src/gestures/binding.dart:437:7)
+#23     GestureBinding.handlePointerEvent (package:flutter/src/gestures/binding.dart:394:5)
+#24     GestureBinding._flushPointerEventQueue (package:flutter/src/gestures/binding.dart:341:7)
+#25     GestureBinding._handlePointerDataPacket (package:flutter/src/gestures/binding.dart:308:9)
+#26     _invoke1 (dart:ui/hooks.dart:346:13)
+#27     PlatformDispatcher._dispatchPointerDataPacket (dart:ui/platform_dispatcher.dart:467:7)
+#28     _dispatchPointerDataPacket (dart:ui/hooks.dart:281:31)
+
+The ValueNotifier<AppSettings> sending notification was:
+  ValueNotifier<AppSettings>#c1b45(Instance of 'AppSettings')
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+
+I/ImeTracker(20503): com.example.studentcompanionapp:1d0bccf1: onRequestHide at ORIGIN_CLIENT reason HIDE_SOFT_INPUT fromUser false
+D/InputConnectionAdaptor(20503): The input method toggled cursor monitoring off
+I/flutter (20503): Error saving settings: type 'Null' is not a subtype of type 'String' in type cast
+E/flutter (20503): [ERROR:flutter/runtime/dart_vm_initializer.cc(40)] Unhandled Exception: type 'Null' is not a subtype of type 'String' in type cast
+E/flutter (20503): #0      AppSettingsAdapter.read (package:studentcompanionapp/data/models/settings.g.dart:26:27)
+E/flutter (20503): #1      BinaryReaderImpl.read (package:hive/src/binary/binary_reader_impl.dart:328:33)
+E/flutter (20503): #2      BinaryReaderImpl.readFrame (package:hive/src/binary/binary_reader_impl.dart:276:26)
+E/flutter (20503): #3      FrameHelper.framesFromBytes (package:hive/src/binary/frame_helper.dart:21:26)
+E/flutter (20503): #4      FrameIoHelper.framesFromFile (package:hive/src/io/frame_io_helper.dart:42:12)
+E/flutter (20503): <asynchronous suspension>
+E/flutter (20503): #5      StorageBackendVm.initialize (package:hive/src/backend/vm/storage_backend_vm.dart:86:11)
+E/flutter (20503): <asynchronous suspension>
+E/flutter (20503): #6      HiveImpl._openBox (package:hive/src/hive_impl.dart:111:9)
+E/flutter (20503): <asynchronous suspension>
+E/flutter (20503): #7      HiveImpl.openBox (package:hive/src/hive_impl.dart:142:12)
+E/flutter (20503): <asynchronous suspension>
+E/flutter (20503): #8      SettingsController._saveSettings (package:studentcompanionapp/domain/providers/theme_provider.dart:111:24)
+E/flutter (20503): <asynchronous suspension>
+E/flutter (20503): #9      SettingsController.updateSettings (package:studentcompanionapp/domain/providers/theme_provider.dart:106:5)
+E/flutter (20503): <asynchronous suspension>
+E/flutter (20503): #10     SettingsController.updateUserName (package:studentcompanionapp/domain/providers/theme_provider.dart:143:5)
+E/flutter (20503): <asynchronous suspension>
+E/flutter (20503): 
+D/InsetsController(20503): hide(ime(), fromIme=true)
+I/ImeTracker(20503): com.example.studentcompanionapp:e319c467: onRequestHide at ORIGIN_CLIENT reason HIDE_SOFT_INPUT_ON_ANIMATION_STATE_CHANGED fromUser false
+I/ImeTracker(20503): com.example.studentcompanionapp:1d0bccf1: onHidden
+I/ImeTracker(20503): com.example.studentcompanionapp:c82cd2e1: onRequestShow at ORIGIN_CLIENT reason SHOW_SOFT_INPUT fromUser false
+D/InputMethodManager(20503): showSoftInput() view=io.flutter.embedding.android.FlutterView{1dc4226 VFE...... .F...... 0,0-1080,2400 #1 aid=1073741824} flags=0 reason=SHOW_SOFT_INPUT
+I/ImeTracker(20503): com.example.studentcompanionapp:ab288c81: onRequestShow at ORIGIN_CLIENT reason SHOW_SOFT_INPUT fromUser false
+D/InputMethodManager(20503): showSoftInput() view=io.flutter.embedding.android.FlutterView{1dc4226 VFE...... .F...... 0,0-1080,2400 #1 aid=1073741824} flags=0 reason=SHOW_SOFT_INPUT
+I/AssistStructure(20503): Flattened final assist data: 544 bytes, containing 1 windows, 3 views
+D/InputConnectionAdaptor(20503): The input method toggled cursor monitoring on
+D/InsetsController(20503): show(ime(), fromIme=true)
+D/InsetsController(20503): show(ime(), fromIme=true)
+I/ImeTracker(20503): com.example.studentcompanionapp:ab288c81: onCancelled at PHASE_CLIENT_APPLY_ANIMATION
+I/ImeTracker(20503): com.example.studentcompanionapp:c82cd2e1: onShown
+Another exception was thrown: Cannot use the Ref of Provider<AppSettings>#706bc after it has been disposed. This typically happens if:
+Another exception was thrown: Cannot use the Ref of Provider<AppSettings>#706bc after it has been disposed. This typically happens if:
+I/ImeTracker(20503): com.example.studentcompanionapp:1ce357ea: onRequestHide at ORIGIN_CLIENT reason HIDE_SOFT_INPUT fromUser false
+D/InsetsController(20503): hide(ime(), fromIme=true)
+D/InputConnectionAdaptor(20503): The input method toggled cursor monitoring off
+I/flutter (20503): Error saving settings: type 'Null' is not a subtype of type 'String' in type cast
+E/flutter (20503): [ERROR:flutter/runtime/dart_vm_initializer.cc(40)] Unhandled Exception: type 'Null' is not a subtype of type 'String' in type cast
+E/flutter (20503): #0      AppSettingsAdapter.read (package:studentcompanionapp/data/models/settings.g.dart:26:27)
+E/flutter (20503): #1      BinaryReaderImpl.read (package:hive/src/binary/binary_reader_impl.dart:328:33)
+E/flutter (20503): #2      BinaryReaderImpl.readFrame (package:hive/src/binary/binary_reader_impl.dart:276:26)
+E/flutter (20503): #3      FrameHelper.framesFromBytes (package:hive/src/binary/frame_helper.dart:21:26)
+E/flutter (20503): #4      FrameIoHelper.framesFromFile (package:hive/src/io/frame_io_helper.dart:42:12)
+E/flutter (20503): <asynchronous suspension>
+E/flutter (20503): #5      StorageBackendVm.initialize (package:hive/src/backend/vm/storage_backend_vm.dart:86:11)
+E/flutter (20503): <asynchronous suspension>
+E/flutter (20503): #6      HiveImpl._openBox (package:hive/src/hive_impl.dart:111:9)
+E/flutter (20503): <asynchronous suspension>
+E/flutter (20503): #7      HiveImpl.openBox (package:hive/src/hive_impl.dart:142:12)
+E/flutter (20503): <asynchronous suspension>
+E/flutter (20503): #8      SettingsController._saveSettings (package:studentcompanionapp/domain/providers/theme_provider.dart:111:24)
+E/flutter (20503): <asynchronous suspension>
+E/flutter (20503): #9      SettingsController.updateSettings (package:studentcompanionapp/domain/providers/theme_provider.dart:106:5)
+E/flutter (20503): <asynchronous suspension>
+E/flutter (20503): #10     SettingsController.updateSemester (package:studentcompanionapp/domain/providers/theme_provider.dart:148:5)
+E/flutter (20503): <asynchronous suspension>
+E/flutter (20503): 
+I/ImeTracker(20503): com.example.studentcompanionapp:f94e7035: onRequestHide at ORIGIN_CLIENT reason HIDE_SOFT_INPUT_ON_ANIMATION_STATE_CHANGED fromUser false
+I/ImeTracker(20503): com.example.studentcompanionapp:1ce357ea: onHidden
+Another exception was thrown: Cannot use the Ref of Provider<AppSettings>#706bc after it has been disposed. This typically happens if:
+Another exception was thrown: Cannot use the Ref of Provider<AppSettings>#706bc after it has been disposed. This typically happens if:
+Another exception was thrown: Cannot use the Ref of Provider<AppSettings>#706bc after it has been disposed. This typically happens if:
+I/flutter (20503): Error saving settings: type 'Null' is not a subtype of type 'String' in type cast
+E/flutter (20503): [ERROR:flutter/runtime/dart_vm_initializer.cc(40)] Unhandled Exception: type 'Null' is not a subtype of type 'String' in type cast
+E/flutter (20503): #0      AppSettingsAdapter.read (package:studentcompanionapp/data/models/settings.g.dart:26:27)
+E/flutter (20503): #1      BinaryReaderImpl.read (package:hive/src/binary/binary_reader_impl.dart:328:33)
+E/flutter (20503): #2      BinaryReaderImpl.readFrame (package:hive/src/binary/binary_reader_impl.dart:276:26)
+E/flutter (20503): #3      FrameHelper.framesFromBytes (package:hive/src/binary/frame_helper.dart:21:26)
+E/flutter (20503): #4      FrameIoHelper.framesFromFile (package:hive/src/io/frame_io_helper.dart:42:12)
+E/flutter (20503): <asynchronous suspension>
+E/flutter (20503): #5      StorageBackendVm.initialize (package:hive/src/backend/vm/storage_backend_vm.dart:86:11)
+E/flutter (20503): <asynchronous suspension>
+E/flutter (20503): #6      HiveImpl._openBox (package:hive/src/hive_impl.dart:111:9)
+E/flutter (20503): <asynchronous suspension>
+E/flutter (20503): #7      HiveImpl.openBox (package:hive/src/hive_impl.dart:142:12)
+E/flutter (20503): <asynchronous suspension>
+E/flutter (20503): #8      SettingsController._saveSettings (package:studentcompanionapp/domain/providers/theme_provider.dart:111:24)
+E/flutter (20503): <asynchronous suspension>
+E/flutter (20503): #9      SettingsController.updateSettings (package:studentcompanionapp/domain/providers/theme_provider.dart:106:5)
+E/flutter (20503): <asynchronous suspension>
+E/flutter (20503): #10     SettingsController.updatePrimaryColor (package:studentcompanionapp/domain/providers/theme_provider.dart:157:7)
+E/flutter (20503): <asynchronous suspension>
+E/flutter (20503): 
+W/WindowOnBackDispatcher(20503): OnBackInvokedCallback is not enabled for the application.
+W/WindowOnBackDispatcher(20503): Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+W/WindowOnBackDispatcher(20503): OnBackInvokedCallback is not enabled for the application.
+W/WindowOnBackDispatcher(20503): Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+W/WindowOnBackDispatcher(20503): OnBackInvokedCallback is not enabled for the application.
+W/WindowOnBackDispatcher(20503): Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+Lost connection to device.
