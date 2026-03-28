@@ -1,20 +1,20 @@
-# 🌸 NexBloom - Ultimate Student Companion
+# NexBloom - Ultimate Student Companion
 
 NexBloom is a modern, feature-rich Flutter application designed to be the ultimate companion for students. It helps manage academics, track progress, and stay organized throughout the semester with a sleek, intuitive, and high-performance user interface.
 
 ![NexBloom Logo](app logo/NexBloom transparent.png)
 
-## 🚀 Key Features
+## Key Features
 
-- **📅 Smart Timetable**: Organize and track your daily class schedule with ease.
-- **📝 Advanced Notes**: Full-featured note-taking system with Markdown support.
-- **✅ Assignment Manager**: Track deadlines and prioritize your academic tasks.
-- **📚 Study Planner**: Designate specific study sessions and manage your learning goals.
-- **🏆 Attendance Tracker**: Keep a real-time record of your presence in every subject.
-- **📊 Progress Visuals**: Built-in charts to visualize your academic performance and consistency.
-- **🔔 Smart Notifications**: Stay on top of classes and assignments with local push notifications.
+- **Smart Timetable**: Organize and track your daily class schedule with ease.
+- **Advanced Notes**: Full-featured note-taking system with Markdown support.
+- **Assignment Manager**: Track deadlines and prioritize your academic tasks.
+- **Study Planner**: Designate specific study sessions and manage your learning goals.
+- **Attendance Tracker**: Keep a real-time record of your presence in every subject.
+- **Progress Visuals**: Built-in charts to visualize your academic performance and consistency.
+- **Smart Notifications**: Stay on top of classes and assignments with local push notifications.
 
-## 🛠️ Technology Stack
+## Technology Stack
 
 NexBloom is built using state-of-the-art Flutter and Dart tools:
 
@@ -26,7 +26,7 @@ NexBloom is built using state-of-the-art Flutter and Dart tools:
 - **Animations**: [flutter_animate](https://pub.dev/packages/flutter_animate)
 - **Theming**: Custom dynamic dark/light mode with Google Fonts integration.
 
-## 🏗️ Project Structure
+## Project Structure
 
 The project follows a modular, clean-architecture-inspired organization:
 
@@ -40,7 +40,7 @@ lib/
 └── main.dart     # App entry point
 ```
 
-## 🪜 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -69,11 +69,11 @@ lib/
    flutter run
    ```
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! If you have suggestions or find bugs, feel free to open an issue or submit a pull request.
 
-## 📄 License
+## License
 
 This project is for academic and personal use. Please refer to specify a license if intended for redistribution.
 
