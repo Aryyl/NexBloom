@@ -14,6 +14,7 @@ import 'data/models/attendance_record.dart';
 import 'data/models/settings.dart';
 import 'data/models/note_model.dart';
 import 'data/models/study_plan_model.dart';
+import 'data/models/focus_session_model.dart';
 import 'core/services/widget_service.dart';
 import 'core/services/background_service.dart';
 
@@ -35,6 +36,7 @@ void main() async {
   Hive.registerAdapter(ChecklistItemAdapter());
   Hive.registerAdapter(StudyPlanAdapter());
   Hive.registerAdapter(StudyDayAdapter());
+  Hive.registerAdapter(FocusSessionAdapter());
 
   // Initialize Hive Service (Open Boxes)
   final hiveService = HiveService();

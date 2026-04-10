@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import '../screens/dashboard/dashboard_screen.dart';
-import '../screens/assignments/add_edit_assignment_screen.dart';
-import '../screens/assignments/assignments_screen.dart';
+import '../../features/dashboard/dashboard_screen.dart';
+import '../../features/assignments/add_edit_assignment_screen.dart';
+import '../../features/assignments/assignments_screen.dart';
 import '../../data/models/assignment.dart';
-import '../screens/timetable/timetable_screen.dart';
+import '../../features/timetable/timetable_screen.dart';
 
-import '../screens/timetable/add_class_screen.dart';
+import '../../features/timetable/add_class_screen.dart';
 import '../../features/attendance/attendance_calendar_screen.dart';
-import '../screens/exams/exams_screen.dart';
-import '../screens/exams/add_exam_screen.dart';
-import '../screens/settings/settings_screen.dart';
-import '../screens/subject_details/subject_detail_screen.dart';
-import '../screens/subjects/add_edit_subject_screen.dart';
+import '../../features/exams/exams_screen.dart';
+import '../../features/exams/add_exam_screen.dart';
+import '../../features/settings/settings_screen.dart';
+import '../../features/subjects/subject_detail_screen.dart';
+import '../../features/subjects/add_edit_subject_screen.dart';
 import 'scaffold_with_navbar.dart';
 import '../../data/models/subject.dart';
 import '../../data/models/note_model.dart';
@@ -22,35 +22,18 @@ import '../../features/study_planner/study_planner_screen.dart';
 import '../../features/study_planner/create_plan_screen.dart';
 import '../../features/study_planner/plan_detail_screen.dart';
 import '../../data/models/study_plan_model.dart';
-import '../screens/splash/splash_screen.dart';
+import '../../features/study_planner/focus_timer_screen.dart';
 
-// Placeholder screens for now
-class PlaceholderScreen extends StatelessWidget {
-  final String title;
-  const PlaceholderScreen({super.key, required this.title});
 
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: Text(title)),
-      body: Center(child: Text(title)),
-    );
-  }
-}
 
 final _rootNavigatorKey = GlobalKey<NavigatorState>();
 final _shellNavigatorKey = GlobalKey<NavigatorState>();
 
 final GoRouter appRouter = GoRouter(
   navigatorKey: _rootNavigatorKey,
-  initialLocation: '/splash',
+  initialLocation: '/',
   routes: [
-    // Splash screen (outside shell - no navbar)
-    GoRoute(
-      path: '/splash',
-      parentNavigatorKey: _rootNavigatorKey,
-      builder: (context, state) => const SplashScreen(),
-    ),
+
     ShellRoute(
       navigatorKey: _shellNavigatorKey,
       builder: (context, state, child) {
@@ -185,6 +168,11 @@ final GoRouter appRouter = GoRouter(
         final plan = state.extra as StudyPlan;
         return PlanDetailScreen(plan: plan);
       },
+    ),
+    GoRoute(
+      path: '/study-planner/focus-timer',
+      parentNavigatorKey: _rootNavigatorKey,
+      builder: (context, state) => const FocusTimerScreen(),
     ),
   ],
 );

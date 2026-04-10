@@ -22,6 +22,14 @@ class StudyPlannerScreen extends ConsumerWidget {
           icon: const Icon(Icons.arrow_back),
           onPressed: () => context.pop(),
         ),
+        actions: [
+          IconButton(
+            tooltip: 'Focus Timer',
+            icon: const Icon(Icons.timer_outlined),
+            onPressed: () => context.push('/study-planner/focus-timer'),
+          ),
+          const SizedBox(width: 8),
+        ],
       ),
       floatingActionButton: FloatingActionButton.extended(
         onPressed: () => context.push('/study-planner/create'),

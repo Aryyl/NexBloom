@@ -4,6 +4,7 @@ import '../../data/models/assignment.dart';
 import '../../data/models/attendance_record.dart';
 import '../../data/models/note_model.dart';
 import '../../data/models/study_plan_model.dart';
+import '../../data/models/focus_session_model.dart';
 
 class HiveService {
   static const String subjectBoxName = 'subjects';
@@ -13,6 +14,7 @@ class HiveService {
   static const String classSessionBoxName = 'class_sessions';
   static const String notesBoxName = 'notes';
   static const String studyPlanBoxName = 'study_plans';
+  static const String focusSessionBoxName = 'focus_sessions';
 
   Future<void> init() async {
     // Open all boxes
@@ -30,6 +32,7 @@ class HiveService {
     await Hive.openBox<ClassSession>(classSessionBoxName);
     await Hive.openBox<Note>(notesBoxName);
     await Hive.openBox<StudyPlan>(studyPlanBoxName);
+    await Hive.openBox<FocusSession>(focusSessionBoxName);
   }
 
   Box<Subject> get subjectBox => Hive.box<Subject>(subjectBoxName);
@@ -41,4 +44,6 @@ class HiveService {
       Hive.box<ClassSession>(classSessionBoxName);
   Box<Note> get noteBox => Hive.box<Note>(notesBoxName);
   Box<StudyPlan> get studyPlanBox => Hive.box<StudyPlan>(studyPlanBoxName);
+  Box<FocusSession> get focusSessionBox =>
+      Hive.box<FocusSession>(focusSessionBoxName);
 }

@@ -23,8 +23,8 @@ class AppSettingsAdapter extends TypeAdapter<AppSettings> {
       attendanceTarget: fields[3] as int,
       semesterStart: fields[4] as DateTime?,
       semesterEnd: fields[5] as DateTime?,
-      userName: (fields[6] as String?) ?? 'Student',
-      currentSemester: (fields[7] as String?) ?? '',
+      userName: fields[6] as String,
+      currentSemester: fields[7] as String,
       primaryColorValue: fields[8] as int?,
     );
   }
