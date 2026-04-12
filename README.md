@@ -2,7 +2,7 @@
 
 NexBloom is a comprehensive, high-performance Flutter application engineered to serve as an advanced companion for academic management. Developed with a focus on productivity and organizational efficiency, NexBloom provides an intuitive interface and robust functionality to manage schedules, track attendance, and optimize study sessions.
 
-![NexBloom Logo](app%20logo/NexBloom%20transparent1.png)
+<img src="app%20logo/NexBloom%20transparent1.png" alt="NexBloom Logo" width="250" />
 
 ## Overview
 
