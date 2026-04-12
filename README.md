@@ -4,6 +4,14 @@ NexBloom is a comprehensive, high-performance Flutter application engineered to 
 
 <img src="app%20logo/NexBloom%20transparent1.png" alt="NexBloom Logo" width="250" />
 
+## Download
+
+You can download the latest stable release of NexBloom for Android from our GitHub Releases page:
+
+[**Download NexBloom v1.0.0-alpha (APK)**](https://github.com/Aryyl/NexBloom/releases/tag/v1.0.0-alpha)
+
+---
+
 ## Overview
 
 NexBloom consolidates essential academic tools into a single, cohesive platform. It is designed to assist students in maintaining a structured approach to their coursework, deadlines, and overall performance tracking. The application leverages modern software architecture principles to ensure scalability, maintainability, and exceptional performance across devices.
