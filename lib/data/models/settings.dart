@@ -4,31 +4,31 @@ part 'settings.g.dart';
 
 @HiveType(typeId: 10)
 class AppSettings extends HiveObject {
-  @HiveField(0)
+  @HiveField(0, defaultValue: 'system')
   String themeMode; // 'light', 'dark', 'system'
 
-  @HiveField(1)
+  @HiveField(1, defaultValue: true)
   bool notificationsEnabled;
 
-  @HiveField(2)
+  @HiveField(2, defaultValue: 60)
   int defaultReminderMinutes;
 
-  @HiveField(3)
+  @HiveField(3, defaultValue: 75)
   int attendanceTarget;
 
-  @HiveField(4)
+  @HiveField(4, defaultValue: null)
   DateTime? semesterStart;
 
-  @HiveField(5)
+  @HiveField(5, defaultValue: null)
   DateTime? semesterEnd;
 
-  @HiveField(6)
+  @HiveField(6, defaultValue: 'Student')
   String userName;
 
-  @HiveField(7)
+  @HiveField(7, defaultValue: '')
   String currentSemester;
 
-  @HiveField(8)
+  @HiveField(8, defaultValue: null)
   int? primaryColorValue; // stores Color.value int
 
   AppSettings({

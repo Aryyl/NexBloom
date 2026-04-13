@@ -16,16 +16,12 @@ final _settingsNotifier = ValueNotifier<AppSettings>(
 // Theme controller class
 class ThemeController {
   static ThemeMode get themeMode => _themeNotifier.value;
-  static Box<AppSettings>? _settingsBox;
 
   static Future<void> init() async {
     try {
-      _settingsBox = await Hive.openBox<AppSettings>(settingsBoxName);
-      final settings = _settingsBox?.get(settingsKey);
-
-      if (settings != null) {
-        _themeNotifier.value = _themeModeFromString(settings.themeMode);
-      }
+      // The settings are already loaded by SettingsController
+      final String modeString = SettingsController.settings.themeMode;
+      _themeNotifier.value = _themeModeFromString(modeString);
     } catch (e) {
       debugPrint('Error loading theme: $e');
     }
@@ -33,21 +29,10 @@ class ThemeController {
 
   static Future<void> setThemeMode(ThemeMode mode) async {
     _themeNotifier.value = mode;
-    await _saveTheme(mode);
-  }
-
-  static Future<void> _saveTheme(ThemeMode mode) async {
-    try {
-      _settingsBox ??= await Hive.openBox<AppSettings>(settingsBoxName);
-
-      var settings = _settingsBox?.get(settingsKey);
-      settings ??= AppSettings.defaultSettings();
-
-      settings.themeMode = _themeModeToString(mode);
-      await _settingsBox?.put(settingsKey, settings);
-    } catch (e) {
-      debugPrint('Error saving theme: $e');
-    }
+    final updated = SettingsController.settings.copyWith(
+      themeMode: _themeModeToString(mode),
+    );
+    await SettingsController.updateSettings(updated);
   }
 
   static ThemeMode _themeModeFromString(String mode) {

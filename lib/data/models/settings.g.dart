@@ -17,14 +17,14 @@ class AppSettingsAdapter extends TypeAdapter<AppSettings> {
       for (int i = 0; i < numOfFields; i++) reader.readByte(): reader.read(),
     };
     return AppSettings(
-      themeMode: fields[0] as String,
-      notificationsEnabled: fields[1] as bool,
-      defaultReminderMinutes: fields[2] as int,
-      attendanceTarget: fields[3] as int,
+      themeMode: fields[0] == null ? 'system' : fields[0] as String,
+      notificationsEnabled: fields[1] == null ? true : fields[1] as bool,
+      defaultReminderMinutes: fields[2] == null ? 60 : fields[2] as int,
+      attendanceTarget: fields[3] == null ? 75 : fields[3] as int,
       semesterStart: fields[4] as DateTime?,
       semesterEnd: fields[5] as DateTime?,
-      userName: fields[6] as String,
-      currentSemester: fields[7] as String,
+      userName: fields[6] == null ? 'Student' : fields[6] as String,
+      currentSemester: fields[7] == null ? '' : fields[7] as String,
       primaryColorValue: fields[8] as int?,
     );
   }
